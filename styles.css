@@ -86,7 +86,7 @@ header h1{
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0 0 2rem;
+    padding: 4rem 0 0 2rem;
 }
 
 .my-name{
@@ -176,15 +176,6 @@ header h1{
     text-align: center;
 }
 
-.profile-pic{
-    background-image: url(./assets/profile-pic.JPG);
-    background-size: cover;
-    background-position: center;
-    height: 12rem;
-    width: 12rem;
-    border-radius: 50%;
-}
-
 .menu-list ul{
     margin-top: 5rem;
 }
@@ -209,18 +200,11 @@ header h1{
     margin-top: 25vh;
 }
 
-/* .intro-title{
-    position: absolute;
-} */
 
 .intro-title h1{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
 }
-/* .intro-title div{
-    opacity: 0;
-    position: inherit;
-} */
 
 .logo-in{
     display: inline-block;
@@ -268,10 +252,6 @@ header h1{
     animation-delay: 8s;
 } */
 
-.savvy{
-    margin-left: 3rem;
-}
-
 @keyframes fade{
     0%{
     opacity: 0;
@@ -300,13 +280,7 @@ header h1{
 }
 
 .intro-about p{
-    /* opacity: 0.7;
-    transition: all 1s ease; */
     color: white;
-}
-
-.intro-content p:hover{
-    opacity: 1;
 }
 
 .intro-content p span{
@@ -325,7 +299,7 @@ header h1{
 
 .sm-icons ul li{
     font-size: 2.8rem;
-    opacity: 0.7;
+    /* opacity: 0.8; */
     transition: all 0.3s ease;
 }
 
@@ -338,7 +312,7 @@ header h1{
     text-shadow: 0 1rem 2rem white;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .scroll-container{
@@ -456,7 +430,7 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .about-profile-pic{
@@ -543,36 +517,11 @@ header h1{
     font-weight: bolder;
 }
 
-/* .gallery-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-} */
-
 .gallery-container{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.jobs-developer,
-.weather-app,
-.film-factory,
-.boat-adventures{
-    margin-top: 8rem;
-}
-
-.jd-content,
-.wa-content,
-.ff-content,
-.ba-content,
-.jd-image,
-.wa-image,
-.ff-image,
-.ba-image{
-    width: 48%;
 }
 
 .gallery-container img{
@@ -584,49 +533,59 @@ header h1{
     font-weight: 300;
 }
 
-.jobs-developer,
-.weather-app{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: right;
-}
-
-.film-factory,
-.boat-adventures{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-}
-
-.tech-icons,
-.tech-icons-start{
-    display: flex;
-    margin-top: 1rem;
-}
-
-.tech-icons{
-    justify-content: flex-end;
-}
-
-.tech-icons li:not(:first-child){
-    margin-left: 2rem;
-}
-
-.tech-icons-start li:not(:last-child){
-    margin-right: 2rem;
-}
 
 .gallery-container i{
     font-size: 4rem;
 }
 
-.project-links a:first-child{
-    margin-right: 20px;
+/* Reviews(THANK YOU...) */
+
+.reviews{
+    border-top: 1px solid #cfbaa6;
+    padding: 8rem 0;
+    text-align: center;
 }
 
+.reviews-heading::after{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    border-bottom: 3px solid #cfbaa6;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.reviews-content{
+    margin: 6rem auto 0;
+    width: 90%;
+    /* padding-bottom: 4rem; */
+}
+
+.reviews-content div{
+    /* margin-bottom: 3rem; */
+    background-color: rgba(230, 227, 222, 0.4);
+    padding: 4rem 1rem;
+    box-shadow: 0 20px 30px 0 rgba(32, 17, 3, 0.25);
+}
+
+.reviews-content div:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+.reviews p{
+    font-size: 1.5rem;
+}
+
+.customer-review{
+    font-style: italic;
+}
+
+.reviews h3{
+    margin-top: 2rem;
+    /* text-align: right; */
+}
 /* Contact styles */
 
 .contact{
@@ -740,7 +699,7 @@ footer p{
     position: fixed;
     /* background-color: black; */
     color: black;
-    bottom: 4rem;
+    bottom: 6rem;
     right: 2rem;
     display: inline-block;
     padding: 10px;
@@ -811,7 +770,7 @@ footer p{
 
     .about-content{
         flex-direction: column;
-        margin-top: 6rem;
+        /* margin-top: 6rem; */
     }
 
     .about-image{
@@ -819,7 +778,7 @@ footer p{
     }
 
     .about-me{
-        margin:4rem 0 0 0;
+        /* margin:4rem 0 0 0; */
         padding: 0 2rem;
         width: 100%;
     }
@@ -965,6 +924,10 @@ footer p{
     .intro-about{
         width: 90%;
         padding-top: 30px;
+    }
+
+    .customer-review{
+        text-align: left;
     }
 }
 
