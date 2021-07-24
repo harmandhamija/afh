@@ -222,23 +222,37 @@ header h1{
     position: inherit;
 } */
 
+.logo-in{
+    display: inline-block;
+    border: 2px solid white;
+    padding: 0rem 1rem;
+}
+
 #ajit{
     font-size: 10rem;
 }
 
-#front-end{
+#furniture{
+    margin-top: -2.5rem;
+}
+
+#house{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+/* #front-end{
     font-size: 4rem;
     padding-left: 5px;
     color: #cfbaa6;
-        font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #developer{
     font-size: 4rem;
     color: white;
-        font-family: 'Bebas Neue', cursive;
-
-}
+    font-family: 'Bebas Neue', cursive;
+} */
 
 /* .intro-title div:nth-of-type(1){
     animation: fade 12s infinite;  
@@ -538,6 +552,9 @@ header h1{
 
 .gallery-container{
     margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .jobs-developer,
