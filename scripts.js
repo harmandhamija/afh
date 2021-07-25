@@ -4,16 +4,20 @@ myApp.toggleMenu = function(){
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const menuList = document.querySelector('.menu-list');
     const ulElement = document.querySelector('ul');
+    const logoMenu = document.querySelector('.logo-menu')
+    
+    function handleClick() {
+        hamburgerMenu.classList.remove('toggle');
+        menuList.classList.remove('show');
+    }
 
     hamburgerMenu.addEventListener('click', function () {
         hamburgerMenu.classList.toggle('toggle');
         menuList.classList.toggle('show');
     })
 
-    ulElement.addEventListener('click', function () {
-        hamburgerMenu.classList.remove('toggle');
-        menuList.classList.remove('show');
-    })
+    logoMenu.addEventListener('click', handleClick);
+    ulElement.addEventListener('click', handleClick);
 }
 
 // scroll to top button
