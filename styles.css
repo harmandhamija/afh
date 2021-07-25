@@ -44,7 +44,7 @@ h1{
     font-family: 'Josefin Sans', sans-serif;
     /* color: #cfbaa6; */
     /* color: #626262; */
-    color: #a0764b;
+    color: #2e1c0b;
     font-weight: 400;
     font-size: 5rem;
 }
@@ -74,8 +74,8 @@ header{
     color: white;
     position: relative;
     /* background: #000000; */
-    background: -webkit-linear-gradient(-17deg,#000000 85%, #cfbaa6 100%);
-    background: linear-gradient(-17deg,#000000 85%, #cfbaa6 100%);
+    /* background: linear-gradient(-20deg,#000000 70%, #cfbaa6 95%); */
+    background: linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%);
 }
 
 header h1{
@@ -87,21 +87,6 @@ header h1{
     display: flex;
     justify-content: space-between;
     padding: 4rem 0 0 2rem;
-}
-
-.my-name{
-    transition: all 0.5s ease;
-}
-
-.my-name:hover,
-.my-name:focus{
-    text-shadow: 0 0.5rem 1rem white;
-}
-
-#first-name{
-    font-size: 1.2rem;
-    font-weight: 100;
-    color: white;
 }
 
 #last-name{
@@ -131,10 +116,10 @@ header h1{
 .menu-bar2,
 .menu-bar3{
     width: 100%;
-    height: 3px;
+    height: 4px;
     background: white;
     transition: transform 0.5s ease-out;
-    background: linear-gradient(-5deg, #cfbaa6 0%, white 100%);
+    background: linear-gradient(0deg, #cfbaa6 60%, black 100%);
 }
 
 .toggle .menu-bar1{
@@ -161,7 +146,8 @@ header h1{
     transform: translateX(100%);
     transition: transform 0.5s ease;
     z-index: 2;
-    background: linear-gradient(-117deg,#000000 0%, #cfbaa6 100%);
+    background: linear-gradient(-117deg,#000000 30%, #cfbaa6 90%);
+    /* background: linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%); */
 }
 
 .menu-list.show{
@@ -176,8 +162,31 @@ header h1{
     text-align: center;
 }
 
+.logo-in-menu{
+    display: inline-block;
+    border: 2px solid #cfbaa6;
+    padding: 0rem 0.2rem;
+}
+
+#ajit-menu{
+    font-size: 6rem;
+    color: #cfbaa6;
+}
+
+#furniture-menu{
+    margin-top: -1rem;
+    color: #cfbaa6;
+    font-size: 2.5rem;
+}
+
+#house-menu{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
 .menu-list ul{
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .menu-list li{
@@ -200,79 +209,43 @@ header h1{
     margin-top: 25vh;
 }
 
-
-.intro-title h1{
+.logo h1,
+.logo-menu h1{
     font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.logo{
     text-align: center;
 }
 
 .logo-in{
     display: inline-block;
-    border: 2px solid white;
-    padding: 0rem 1rem;
+    border: 2px solid #cfbaa6;
+    padding: 0rem 0.5rem;
 }
 
 #ajit{
-    font-size: 10rem;
+    font-size: 8rem;
+    color: #cfbaa6;
 }
 
 #furniture{
-    margin-top: -2.5rem;
+    margin-top: -1.8rem;
+    color: #cfbaa6;
+    font-size: 3rem;
 }
 
 #house{
     font-family: 'Lato', sans-serif;
     color: white;
+    font-size: 3rem;
 }
-
-/* #front-end{
-    font-size: 4rem;
-    padding-left: 5px;
-    color: #cfbaa6;
-    font-family: 'Bebas Neue', cursive;
-}
-
-#developer{
-    font-size: 4rem;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-} */
-
-/* .intro-title div:nth-of-type(1){
-    animation: fade 12s infinite;  
-} */
-
-/* .intro-title div:nth-of-type(2){
-    animation: fade 12s infinite;
-    animation-delay: 4s;
-}
-
-.intro-title div:nth-of-type(3){
-    animation: fade 12s infinite;
-    animation-delay: 8s;
-} */
-
-@keyframes fade{
-    0%{
-    opacity: 0;
-}   
-    10%{
-        opacity: 1;
-    }
-    23%{
-    opacity: 1;
-}
-    38%{
-    opacity: 0;
-}
-    100%{
-    opacity: 0;
-}
-    }
 
 .intro-about{
-    width: 48%;
-    padding: 13rem 0 0 4rem;
+    width: 60%;
+    margin: 4rem auto 0 auto;
+    text-align: center;
 }
 
 .intro-about span{
@@ -290,11 +263,11 @@ header h1{
 
 .sm-icons{
     margin-top: 4rem;
-    padding-left: 4.5rem;
 }
 
 .sm-icons ul{
     display: flex;
+    justify-content: center;
 }
 
 .sm-icons ul li{
@@ -723,18 +696,6 @@ footer p{
 
 /* media queries */
 
-@media (max-width:1300px) {
-    .intro-about{
-        width: 55%;
-    }
-}
-
-@media (max-width:1150px) {
-    .intro-about{
-        width: 63%;
-    }
-}
-
 @media (max-width:1050px) {
     .wrapper{
         width: 85%;
@@ -752,25 +713,11 @@ footer p{
 @media (max-width:900px) {
 
     .intro-about{
-        width: 65%;
-        padding: 120px 0 0 20px;
-    }
-
-    .intro-about p{
-        font-size: 1.6rem;
-    }
-
-    .sm-icons{
-        padding-left: 25px;
-    }
-
-    #developer{
-        font-size: 6.5rem;
+        width: 70%;
     }
 
     .about-content{
         flex-direction: column;
-        /* margin-top: 6rem; */
     }
 
     .about-image{
@@ -793,10 +740,6 @@ footer p{
 }
 
 @media (max-width:770px){
-
-    .intro-about{
-        width: 76%;
-    }
 
     #developer{
         font-size: 6rem;
@@ -886,6 +829,10 @@ footer p{
 
 @media (max-width:650px) {
 
+    .intro-about{
+        width: 90%;
+    }
+
     #first-name{
         font-size: 1rem;
     }
@@ -896,6 +843,7 @@ footer p{
 
     .menu-list{
         width: 100vw;
+        background: linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%);
     }
 
     .intro-title{
@@ -996,24 +944,5 @@ footer p{
 
     #front-end{
         font-size: 1.8rem;
-    }
-}
-
-@media (max-width:380px) {
-    header{
-        background: -webkit-linear-gradient(-17deg,#000000 82%, #cfbaa6 100%);
-        background: linear-gradient(-17deg,#000000 82%, #cfbaa6 100%);
-    }
-
-    #developer{
-        font-size: 3.3rem;
-    }
-
-    #front-end{
-        font-size: 1.6rem;
-    }
-
-    .intro-about p{
-        font-size: 1.5rem;
     }
 }
