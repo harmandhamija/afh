@@ -74,8 +74,8 @@ header{
     color: white;
     position: relative;
     /* background: #000000; */
-    background: -webkit-linear-gradient(-20deg,#cfbaa6 -25%,#000000 50%, #cfbaa6 125%);
-    background: linear-gradient(-20deg,#cfbaa6 -20%,#000000 50%, #cfbaa6 120%);
+    background: -webkit-linear-gradient(-20deg,#cfbaa6 -10%,#000000 50%, #cfbaa6 110%);
+    background: linear-gradient(-20deg,#cfbaa6 -10%,#000000 50%, #cfbaa6 110%);
 }
 
 header h1{
@@ -695,14 +695,19 @@ footer{
     background-color: black;
     background: -webkit-linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
     background: linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
+    padding: 1rem 0;
 }
 
 footer p{
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0;
     color: white;
+}
+
+footer p:nth-child(3){
+    padding-top: 2rem;
 }
 
 footer span{
