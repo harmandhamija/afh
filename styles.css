@@ -296,7 +296,7 @@ header h1{
 .scroll-container p{
     text-align: center;
     margin-bottom: 1rem;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     font-size: 1.8rem;
     color: #cfbaa6;
 }
@@ -304,7 +304,7 @@ header h1{
 .scroll-down{
     display: flex;
     justify-content: center;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .scroll-down div{
@@ -543,8 +543,8 @@ header h1{
 
 .reviews-content div{
     /* margin-bottom: 3rem; */
-    background-color: rgba(230, 227, 222, 0.4);
-    padding: 4rem 1rem;
+    background-color: rgba(207, 186, 166, 0.2);
+    padding: 3rem 1rem;
     box-shadow: 0 20px 30px 0 rgba(32, 17, 3, 0.25);
 }
 
@@ -556,12 +556,28 @@ header h1{
     font-size: 1.5rem;
 }
 
+.reviews-text{
+    position: relative;
+}
+
+.customer-review::after{
+    content: '';
+    display: inline-block;
+    width: 150px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 80px;
+    left: 50%;
+}
+
 .customer-review{
     font-style: italic;
 }
 
 .reviews h3{
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     /* text-align: right; */
 }
 /* Contact styles */
@@ -675,14 +691,13 @@ footer p{
 
 .scroll-top{
     position: fixed;
-    /* background-color: black; */
     color: black;
-    bottom: 6rem;
+    bottom: 5rem;
     right: 2rem;
     display: inline-block;
     padding: 10px;
     font-size: 2.5rem;
-    border: 2px solid black;
+    border: 2px solid #cfbaa6;
     border-radius: 2px;
     z-index: 100;
     cursor: pointer;
@@ -691,7 +706,7 @@ footer p{
 }
 
 .scroll-top:hover{
-    background-color: black;
+    background: linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%);
     color: white;
 }
 
@@ -745,36 +760,6 @@ footer p{
 }
 
 @media (max-width:770px){
-
-    #developer{
-        font-size: 6rem;
-    }
-
-    .jobs-developer,
-    .weather-app,
-    .film-factory,
-    .boat-adventures{
-        flex-direction: column-reverse;
-        box-shadow: 0 20px 30px 0 rgb(207, 186, 166, 0.25);
-        padding-bottom: 2rem;
-    }
-
-    .jd-image,
-    .wa-image,
-    .ff-image,
-    .ba-image{
-        width: 100%;
-    }
-
-    .jd-content,
-    .wa-content,
-    .ff-content,
-    .ba-content{
-        margin-top: 4rem;
-        padding: 0 10px;
-        width: 100%;
-        text-align: center;
-    }
 
     .gallery-container h1{
         color: #cfbaa6;
@@ -888,6 +873,10 @@ footer p{
     .about-me{
         padding: 0;
     }
+
+    .intro{
+        margin-top: 20vh;
+    }
 }
 
 @media (max-width:475px){
@@ -897,6 +886,10 @@ footer p{
 
     h1{
         font-size: 4rem;
+    }
+
+    .scroll-down{
+        padding-bottom: 1rem;
     }
 
     .intro-title{
