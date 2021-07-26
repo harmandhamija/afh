@@ -582,7 +582,7 @@ header h1{
     position: absolute;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 80px;
+    bottom: 90px;
     left: 50%;
 }
 
