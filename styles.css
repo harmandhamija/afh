@@ -74,8 +74,8 @@ header{
     color: white;
     position: relative;
     /* background: #000000; */
-    background: -webkit-linear-gradient(-20deg,#cfbaa6 -10%,#000000 50%, #cfbaa6 110%);
-    background: linear-gradient(-20deg,#cfbaa6 -10%,#000000 50%, #cfbaa6 110%);
+    background: -webkit-linear-gradient(-20deg,#cfbaa6 0%,#000000 50%, #cfbaa6 100%);
+    background: linear-gradient(-20deg,#cfbaa6 0%,#000000 50%, #cfbaa6 100%);
 }
 
 header h1{
