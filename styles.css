@@ -399,7 +399,8 @@ header h1{
 
 .products-icons ul p:hover,
 .products-icons ul p:focus{
-    color: #cfbaa6;
+    /* color: #cfbaa6; */
+    color: #ca8e56;
 }
 
 .products-icons p{
