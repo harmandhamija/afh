@@ -44,19 +44,10 @@ myApp.handleScroll = function () {
     })
 }
 
-// instagram feed
-
-// myApp.instagramFeed = function() {
-//     var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1;
-//     i.src = "https://cdn.curator.io/published/e44387c6-440c-48a3-a4ec-1225deeb629a.js";
-//     e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
-// }
-
 myApp.init = function(){
     myApp.toggleMenu();
     AOS.init();
     myApp.handleScroll();
-    // myApp.instagramFeed();
 }
 
 myApp.init();
