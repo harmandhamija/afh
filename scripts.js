@@ -1,3 +1,6 @@
+import displayReviews from './modules/reviews.js';
+import instagramFeed from './modules/instagram.js';
+
 const myApp = {};
 
 myApp.toggleMenu = function(){
@@ -46,7 +49,8 @@ myApp.handleScroll = function () {
 
 myApp.init = function(){
     myApp.toggleMenu();
-    AOS.init();
+    displayReviews();
+    instagramFeed();
     myApp.handleScroll();
 }
 
