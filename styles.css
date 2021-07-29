@@ -515,10 +515,12 @@ header h1{
     width: 90%;
 }
 
-.reviews-content div{
+.reviews-text{
     background-color: rgba(207, 186, 166, 0.2);
     padding: 3rem 1rem;
     box-shadow: 0 20px 30px 0 rgba(32, 17, 3, 0.25);
+    position: relative;
+    border-radius: 10px;
 }
 
 .reviews-content div:not(:last-child){
@@ -527,10 +529,6 @@ header h1{
 
 .reviews p{
     font-size: 1.5rem;
-}
-
-.reviews-text{
-    position: relative;
 }
 
 .customer-review::after{
