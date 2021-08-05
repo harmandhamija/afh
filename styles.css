@@ -67,7 +67,7 @@ ul{
 
 /* header styles */
 
-header{
+.header-container{
     min-height: 100vh;
     background-color: black;
     color: white;
@@ -81,20 +81,10 @@ header h1{
     font-size: 4rem;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem 0 0 2rem;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-}
-
 .hamburger-menu{
     width: 3.5rem;
     position: fixed;
+    top: 2rem;
     right: 2rem;
     z-index: 5;
     cursor: pointer;
@@ -198,7 +188,7 @@ header h1{
 }
 
 .intro{
-    margin-top: 25vh;
+    padding-top: 25vh;
 }
 
 .logo h1,
@@ -392,73 +382,6 @@ header h1{
     font-size: 1.5rem;
     margin-top: 1rem;
 }
-
-/* ABOUT section styles*/
-
-/* .about{
-    text-align: center;
-    padding: 8rem 0;
-    border-top: 1px solid #cfbaa6;
-    overflow-x: hidden;
-}
-
-.about-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
-}
-
-.about-me{
-    width: 80%;
-    text-align: left;
-    margin-left: 1rem;
-}
-
-.about-me p{
-    line-height: 1.6;
-}
-
-.about-me p:not(:last-child){
-    margin-bottom: 20px;
-}
-
-.about-me a,
-.about-me p:last-child{
-    color: #cfbaa6;
-    font-weight: bolder;
-}
-
-.resume{
-    margin-top: 4rem;
-}
-
-.resume a,
-.project-links a{
-    padding: 10px;
-    background-color: transparent;
-    border: 2px solid #cfbaa6;
-    border-radius: 2px;
-    display: inline-block;
-    transition: all 0.5s ease;
-}
-
-.resume a:hover,
-.resume a:focus,
-.project-links a:hover,
-.project-links a:focus{
-    background-color: #cfbaa6;
-}
-
-.resume i{
-    color: #e7e7e7;
-    margin-left: 5px;
-    transition: all 0.5s ease;
-}
-
-.resume:hover i{
-    color: white;
-} */
 
 /* GALLERY */
 
@@ -707,10 +630,6 @@ footer span{
     .contact-text{
         width: 53%;
     }
-
-    /* .intro-about{
-        width: 67%;
-    } */
 }
 
 @media (max-width:900px) {
@@ -718,20 +637,6 @@ footer span{
     .intro-about{
         width: 70%;
     }
-
-    /* .about-content{
-        flex-direction: column;
-    }
-
-    .about-image{
-        margin-right: 0;
-    }
-
-    .about-me{
-        margin:4rem 0 0 0;
-        padding: 0 2rem;
-        width: 100%;
-    } */
 
     .gallery-container h1{
         font-size: 4rem;
@@ -827,7 +732,7 @@ footer span{
     }
 
     .intro{
-        margin-top: 20vh;
+        padding-top: 20vh;
     }
 }
 
@@ -881,3 +786,82 @@ footer span{
     }
 
 }
+
+
+/* sofas page */
+
+#logo-page{
+    padding-top: 2rem;
+}
+
+#house-page{
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 2.5rem;
+}
+
+.tagline-page{
+    display: inline-block;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 1rem;
+    padding: 2px 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.nav-product{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 2rem;
+}
+
+.nav-product ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav-product ul li{
+    padding: 1.5rem 0;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.nav-product ul li:not(:last-child){
+    margin-right: 3rem;
+}
+
+.nav-product ul li:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ss-main{
+    margin-top: 5rem;
+}
+
+.ss-heading{
+    text-align: center;
+}
+
+.ss-images{
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ss-images div{
+    height: 350px;
+    width: 467px;
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+
+
+
+
