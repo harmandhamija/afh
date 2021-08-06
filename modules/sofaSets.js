@@ -17,7 +17,7 @@ export default function sofaImages() {
         {
             path: './assets/sofa-4.JPG',
             alt: 'Sofa Set'
-        }
+        },
     ]
 
     imagesArray.forEach((image) => {

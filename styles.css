@@ -679,13 +679,14 @@ footer span{
 }
 
 .pages-main{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     text-align: center;
 }
 
 .pages-heading,
 .beds-heading{
     position: relative;
+    margin: 5rem 0;
 }
 
 .pages-heading h4::after,
@@ -697,12 +698,31 @@ footer span{
     position: absolute;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -10px;
+    top: 25px;
     left: 50%;
 }
 
 .beds-heading h4::after{
     width: 30px;
+}
+
+.pages-heading p,
+.beds-heading p{
+    font-size: 1.3rem;
+}
+
+.see-more,
+.see-less{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #cfbaa6;
+    font-weight: bold;
+}
+
+.more-details,
+.see-less{
+    display: none;
 }
 
 .ss-images{
@@ -711,13 +731,6 @@ footer span{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-/* .ss-images div{
-    height: 350px;
-    width: 467px;
-    background-size: cover;
-    margin-bottom: 4rem;
-} */
 
 .ss-images div{
     margin-bottom: 2rem;
@@ -746,16 +759,16 @@ footer span{
     border: 1px solid black;
 } */
 
-.fabric-category,
+/* .fabric-category,
 .wooden-category{
     width: 33%;
-}
+} */
 
-.fabric-category img,
+/* .fabric-category img,
 .wooden-category img{
     width: 100%;
     border: 1px solid lightgray;
-}
+} */
 
 /* .wooden-category{
     background-image: url(./assets/wooden-category.jpg);
@@ -864,6 +877,11 @@ footer span{
 
     .nav-product{
         display: none;
+    }
+
+    .pages-main{
+        border-top: 1px solid #cfbaa6;
+        margin-top: 5rem;
     }
 
     .customer-review{
