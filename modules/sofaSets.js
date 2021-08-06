@@ -1,8 +1,9 @@
-// sofaSets.js
+// sofaImages.js
 
 export default function sofaImages() {
 
-    const imagesArray = [{
+    const imagesArray = [
+        {
             path: './assets/sofa-1.JPG',
             alt: 'Sofa Set'
             },

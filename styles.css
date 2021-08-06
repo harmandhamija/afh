@@ -577,6 +577,7 @@ footer{
     background: -webkit-linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
     background: linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
     padding: 1rem 0;
+    position: relative;
 }
 
 footer p{
@@ -620,8 +621,7 @@ footer span{
     transform: translateY(0%);
 }
 
-
-/* sofas page */
+/* product pages general */
 
 #logo-page{
     padding-top: 2rem;
@@ -681,6 +681,7 @@ footer span{
 .pages-main{
     /* margin-top: 5rem; */
     text-align: center;
+    /* min-height: 45.8vh; */
 }
 
 .pages-heading,
@@ -709,6 +710,8 @@ footer span{
 .pages-heading p,
 .beds-heading p{
     font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .see-more,
@@ -718,6 +721,7 @@ footer span{
     cursor: pointer;
     color: #cfbaa6;
     font-weight: bold;
+    padding: 0;
 }
 
 .more-details,
@@ -725,20 +729,25 @@ footer span{
     display: none;
 }
 
-.ss-images{
+.ss-images,
+.seating-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+.ss-images img,
+.seating-images img{
+    width: 100%;
+}
+
+
+/* sofas page */
+
 .ss-images div{
     margin-bottom: 2rem;
     width: 48%;
-}
-
-.ss-images img{
-    width: 100%;
 }
 
 /* .sofa-category{
@@ -774,6 +783,19 @@ footer span{
     background-image: url(./assets/wooden-category.jpg);
 } */
 
+
+/* seating page */
+
+.seating-images{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.seating-images div{
+    width: 30%;
+    margin-bottom: 4rem;
+}
+
 /* media queries */
 
 @media (max-width:1050px) {
@@ -798,6 +820,10 @@ footer span{
 
     .contact-text h1{
         font-size: 4.5rem;
+    }
+
+    .seating-images div{
+        width: 45%;
     }
 }
 
@@ -857,6 +883,13 @@ footer span{
     .form-container{
         margin-top: 6rem;
     }
+
+    /* product pages */
+
+    .pages-heading p,
+    .beds-heading p{
+        width: 100%;
+    }
 }
 
 @media (max-width:650px) {
@@ -900,6 +933,10 @@ footer span{
 
     .ss-images div{
     width: 100%;
+    }
+
+    .seating-images{
+        width: 100%;
     }
 
 }
@@ -951,6 +988,10 @@ footer span{
 
     p{
         font-size: 1.6rem;
+    }
+
+    .seating-images div{
+        width: 80%;
     }
 
 }
