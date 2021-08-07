@@ -4,21 +4,45 @@ export default function sofaImages() {
 
     const imagesArray = [
         {
+            path: './assets/gl-sofa.JPG',
+            alt: 'Sofa Set'
+            },
+        {
+            path: './assets/gl-bombay-tufted-sofa.JPG',
+            alt: 'Sofa Set'
+            },
+        {
+            path: './assets/gl-coorg-sofa.JPG',
+            alt: 'Sofa Set'
+            },
+        {
+            path: './assets/gl-munich-sofa.JPG',
+            alt: 'Sofa Set'
+            },
+        {
+            path: './assets/gl-norway-sofa.JPG',
+            alt: 'Sofa Set'
+            },
+        // {
+        //     path: './assets/gl-regimen-chesterfield-sofa.JPG',
+        //     alt: 'Sofa Set'
+        // },
+        {
+            path: './assets/gl-regimen-chesterfield-sofa-3.JPG',
+            alt: 'Sofa Set'
+        },
+        {
             path: './assets/sofa-1.JPG',
+            alt: 'Sofa Set'
+            },
+        {
+            path: './assets/sofa-ethnic.JPG',
             alt: 'Sofa Set'
             },
         {
             path: './assets/sofa-2.JPG',
             alt: 'Sofa Set'
             },
-        {
-            path: './assets/sofa-3.JPG',
-            alt: 'Sofa Set'
-            },
-        {
-            path: './assets/sofa-4.JPG',
-            alt: 'Sofa Set'
-        },
     ]
 
     imagesArray.forEach((image) => {
@@ -30,6 +54,7 @@ export default function sofaImages() {
         const sofaImage = document.createElement('img');
 
         sofaImage.src = `${image.path}`;
+        sofaImage.alt = `${image.alt}`;
 
         imageDiv.appendChild(sofaImage);
 

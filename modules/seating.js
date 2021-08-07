@@ -32,21 +32,37 @@ export default function seatingImages() {
             alt: 'Seating Chair'
             },
         {
-            path: './assets/ul-elite-lounger-green.jpg',
+            path: './assets/gl-berlin-chair.jpg',
             alt: 'Seating Chair'
             },
         {
-            path: './assets/gl-berlin-chair.jpg',
-            alt: 'Seating Chair'
-        },
-        {
             path: './assets/gl-paris-chair.jpg',
             alt: 'Seating Chair'
-        },
+            },
         {
             path: './assets/gl-milan-chair.jpg',
             alt: 'Seating Chair'
-        },
+            },
+        {
+            path: './assets/gl-paris-chair-orange.jpg',
+            alt: 'Seating Chair'
+            },
+        {
+            path: './assets/gl-gulmarg-chaise-chair.jpg',
+            alt: 'Seating Chaise'
+            },
+        {
+            path: './assets/gl-edinburgh-chaise-chair.jpg',
+            alt: 'Seating Chaise'
+            },
+        {
+            path: './assets/gl-amer-chaise-chair.jpg',
+            alt: 'Seating Chaise'
+            },
+        {
+            path: './assets/ul-elite-lounger-green.jpg',
+            alt: 'Seating Chaise'
+            },
     ]
 
     imagesArray.forEach((image) => {
@@ -58,6 +74,7 @@ export default function seatingImages() {
         const seatingImage = document.createElement('img');
 
         seatingImage.src = `${image.path}`;
+        seatingImage.alt = `${image.alt}`;
 
         imageDiv.appendChild(seatingImage);
 

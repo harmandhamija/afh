@@ -576,7 +576,7 @@ footer{
     background-color: black;
     background: -webkit-linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
     background: linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
-    padding: 1rem 0;
+    padding: 0.5rem 0 0;
     position: relative;
 }
 
@@ -587,23 +587,32 @@ footer p{
     color: white;
 }
 
+.footer p{
+    font-size: 1.2rem;
+}
+
 footer p:nth-child(3){
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
 }
 
 footer span{
     color: #cfbaa6
 }
 
+.copyright{
+    font-size: 1.2rem;
+}
+
 .scroll-top{
     position: fixed;
+    background-color: #cfbaa6;
     color: black;
-    bottom: 5rem;
+    bottom: 4rem;
     right: 2rem;
     display: inline-block;
-    padding: 10px;
-    font-size: 2.5rem;
-    border: 2px solid #cfbaa6;
+    padding: 10px 7px;
+    font-size: 2rem;
     border-radius: 2px;
     z-index: 100;
     cursor: pointer;
@@ -612,8 +621,8 @@ footer span{
 }
 
 .scroll-top:hover{
-    background: -webkit-linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%);
-    background: linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%);
+    /* background: -webkit-linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%);
+    background: linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%); */
     color: white;
 }
 
@@ -738,7 +747,8 @@ footer span{
 }
 
 .ss-images img,
-.seating-images img{
+.seating-images img,
+.beds-images img{
     width: 100%;
 }
 
@@ -747,7 +757,7 @@ footer span{
 
 .ss-images div{
     margin-bottom: 2rem;
-    width: 48%;
+    width: 32%;
 }
 
 /* .sofa-category{
@@ -796,6 +806,36 @@ footer span{
     margin-bottom: 4rem;
 }
 
+/* dining page */
+
+.dining-images{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.dining-images div{
+    width: 33%;
+}
+
+.dining-images img{
+    width: 100%;
+}
+
+/* beds page */
+
+.beds-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.beds-images div{
+    width: 32%;
+    margin-bottom: 2rem;
+}
+
 /* media queries */
 
 @media (max-width:1050px) {
@@ -822,7 +862,8 @@ footer span{
         font-size: 4.5rem;
     }
 
-    .seating-images div{
+    .seating-images div,
+    .beds-images div{
         width: 45%;
     }
 }
@@ -919,6 +960,10 @@ footer span{
 
     .customer-review{
         text-align: left;
+    }
+
+    .beds-images div{
+        width: 100%;
     }
 }
 
