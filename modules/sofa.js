@@ -57,10 +57,8 @@ export default function sofaImages() {
         sofaImage.alt = `${image.alt}`;
 
         imageDiv.appendChild(sofaImage);
-
-        // imageDiv.style.backgroundImage = `url(${image.path})`;
-
         ssImages.appendChild(imageDiv);
+
     })
 
 }

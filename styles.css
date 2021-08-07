@@ -22,6 +22,7 @@ body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     color: black;
+    position: relative;
     /* background-color: black; */
 }
 
@@ -576,8 +577,10 @@ footer{
     background-color: black;
     background: -webkit-linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
     background: linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
-    padding: 0.5rem 0 0;
-    position: relative;
+    padding: 0.5rem 0;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
 }
 
 footer p{
@@ -739,7 +742,8 @@ footer span{
 }
 
 .ss-images,
-.seating-images{
+.seating-images,
+.tv-units-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -748,16 +752,25 @@ footer span{
 
 .ss-images img,
 .seating-images img,
-.beds-images img{
+.beds-images img,
+.tv-units-images img{
     width: 100%;
+}
+
+.coming-soon h5{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
 }
 
 
 /* sofas page */
 
-.ss-images div{
-    margin-bottom: 2rem;
+.ss-images div,
+.beds-images div,
+.tv-units-images div{
     width: 32%;
+    margin-bottom: 2rem;
 }
 
 /* .sofa-category{
@@ -769,30 +782,17 @@ footer span{
 
 .sofa-category h4{
     margin-top: 1rem;
-} */
+}
 
-/* .sofa-category img{
-    background-image: url(./assets/fabric-category.jpg);
-    height: 350px;
-    width: 467px;
-    border: 1px solid black;
-} */
-
-/* .fabric-category,
+.fabric-category,
 .wooden-category{
-    width: 33%;
-} */
+    width: 45%;
+}
 
-/* .fabric-category img,
+.fabric-category img,
 .wooden-category img{
     width: 100%;
-    border: 1px solid lightgray;
 } */
-
-/* .wooden-category{
-    background-image: url(./assets/wooden-category.jpg);
-} */
-
 
 /* seating page */
 
@@ -829,11 +829,6 @@ footer span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.beds-images div{
-    width: 32%;
-    margin-bottom: 2rem;
 }
 
 /* media queries */
