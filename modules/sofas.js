@@ -4,23 +4,23 @@ export default function sofaImages() {
 
     const imagesArray = [
         {
-            path: './assets/gl-sofa.JPG',
+            path: './assets/gl-sofa.jpg',
             alt: 'Sofa Set'
             },
         {
-            path: './assets/gl-bombay-tufted-sofa.JPG',
+            path: './assets/gl-bombay-tufted-sofa.jpg',
             alt: 'Sofa Set'
             },
         {
-            path: './assets/gl-coorg-sofa.JPG',
+            path: './assets/gl-coorg-sofa.jpg',
             alt: 'Sofa Set'
             },
         {
-            path: './assets/gl-munich-sofa.JPG',
+            path: './assets/gl-munich-sofa.jpg',
             alt: 'Sofa Set'
             },
         {
-            path: './assets/gl-norway-sofa.JPG',
+            path: './assets/gl-norway-sofa.jpg',
             alt: 'Sofa Set'
             },
         // {
@@ -28,7 +28,7 @@ export default function sofaImages() {
         //     alt: 'Sofa Set'
         // },
         {
-            path: './assets/gl-regimen-chesterfield-sofa-3.JPG',
+            path: './assets/gl-regimen-chesterfield-sofa-3.jpg',
             alt: 'Sofa Set'
         },
         {
@@ -36,7 +36,7 @@ export default function sofaImages() {
             alt: 'Sofa Set'
             },
         {
-            path: './assets/sofa-ethnic.JPG',
+            path: './assets/sofa-ethnic.jpg',
             alt: 'Sofa Set'
             },
         {
