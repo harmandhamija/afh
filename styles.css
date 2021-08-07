@@ -841,6 +841,10 @@ footer span{
     .contact-text{
         width: 53%;
     }
+
+    .tv-units-images div{
+        width: 48%;
+    }
 }
 
 @media (max-width:900px) {
@@ -957,7 +961,8 @@ footer span{
         text-align: left;
     }
 
-    .beds-images div{
+    .beds-images div,
+    .tv-units-images div{
         width: 100%;
     }
 }
