@@ -675,6 +675,26 @@ footer span{
     color: black;
 }
 
+.products-navigate{
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.products-navigate a{
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+    opacity: 0.5;
+    margin-right: 1rem;
+    transition: all 0.5s ease;
+}
+
+.products-navigate a:hover{
+    opacity: 1;
+    color: #cfbaa6;
+}
+
 .nav-product ul li:not(:last-child){
     margin-right: 3rem;
 }
@@ -739,7 +759,8 @@ footer span{
 
 .ss-images,
 .seating-images,
-.tv-units-images{
+.tv-units-images,
+.study-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -749,7 +770,8 @@ footer span{
 .ss-images img,
 .seating-images img,
 .beds-images img,
-.tv-units-images img{
+.tv-units-images img,
+.study-images img{
     width: 100%;
 }
 
@@ -764,7 +786,8 @@ footer span{
 
 .ss-images div,
 .beds-images div,
-.tv-units-images div{
+.tv-units-images div,
+.study-images div{
     width: 32%;
     margin-bottom: 2rem;
 }
@@ -838,7 +861,8 @@ footer span{
         width: 53%;
     }
 
-    .tv-units-images div{
+    .tv-units-images div,
+    .study-images div{
         width: 48%;
     }
 }
@@ -958,7 +982,8 @@ footer span{
     }
 
     .beds-images div,
-    .tv-units-images div{
+    .tv-units-images div,
+    .study-images div{
         width: 100%;
     }
 }
