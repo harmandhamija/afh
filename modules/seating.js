@@ -8,7 +8,15 @@ export default function seatingImages() {
             alt: 'Seating Chair'
             },
         {
-            path: './assets/ul-grace-chair.jpg',
+            path: './assets/ul-genoa-chair.jpg',
+            alt: 'Seating Chair'
+            },
+        {
+            path: './assets/ul-brando.jpg',
+            alt: 'Seating Chair'
+            },
+        {
+            path: './assets/gl-milan-chair.jpg',
             alt: 'Seating Chair'
             },
         {
@@ -16,15 +24,15 @@ export default function seatingImages() {
             alt: 'Seating Chair'
             },
         {
-            path: './assets/ul-genoa-chair.jpg',
+            path: './assets/gl-paris-chair.jpg',
+            alt: 'Seating Chair'
+            },
+        {
+            path: './assets/ul-grace-chair.jpg',
             alt: 'Seating Chair'
             },
         {
             path: './assets/ul-carven-chair.jpg',
-            alt: 'Seating Chair'
-            },
-        {
-            path: './assets/ul-brando.jpg',
             alt: 'Seating Chair'
             },
         {
@@ -33,14 +41,6 @@ export default function seatingImages() {
             },
         {
             path: './assets/gl-berlin-chair.jpg',
-            alt: 'Seating Chair'
-            },
-        {
-            path: './assets/gl-paris-chair.jpg',
-            alt: 'Seating Chair'
-            },
-        {
-            path: './assets/gl-milan-chair.jpg',
             alt: 'Seating Chair'
             },
         {

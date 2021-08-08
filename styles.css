@@ -436,44 +436,78 @@ header h1{
 
 .reviews-content{
     margin: 6rem auto 0;
-    width: 90%;
-}
-
-.reviews-text{
-    background-color: rgba(207, 186, 166, 0.2);
-    padding: 3rem 1rem;
-    box-shadow: 0 20px 30px 0 rgba(32, 17, 3, 0.25);
-    position: relative;
-    border-radius: 10px;
-}
-
-.reviews-content div:not(:last-child){
-    margin-bottom: 3rem;
-}
-
-.reviews p{
-    font-size: 1.5rem;
-}
-
-.customer-review::after{
-    content: '';
-    display: inline-block;
-    width: 150px;
-    border-bottom: 1px solid black;
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 90px;
-    left: 50%;
-}
-
-.customer-review{
-    font-style: italic;
+    /* width: 95%; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews h3{
     margin-top: 2.5rem;
-    /* text-align: right; */
+}
+
+/* reviews slider */
+
+.reviews-slider{
+    margin-top: 6rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-container{
+    position: relative;
+    left: 0;
+    width: 600%;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.slider-content{
+    background-color: rgba(207, 186, 166, 0.2);
+    padding: 2.5rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-content h3{
+    margin-top: 2.5rem;
+}
+
+.slider-text{
+    font-style: italic;
+    font-size: 1.5rem;
+    /* width: 90%; */
+}
+
+.slider-button{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 2rem 1rem 0;
+    border-radius: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: none;
+    background-color: lightgray;
+    transition: all 0.5s ease;
+}
+
+.slider-button:hover{
+    background-color: gray;
+}
+
+.slider-button:checked{
+    background-color: black;
 }
 
 /* Contact styles */
@@ -977,7 +1011,7 @@ footer span{
         margin-top: 5rem;
     }
 
-    .customer-review{
+    .slider-text{
         text-align: left;
     }
 
@@ -1044,6 +1078,10 @@ footer span{
 
     .products-icons ul li{
         margin-bottom: 5%;
+    }
+
+    .reviews-content{
+        width: 95%;
     }
 }
 

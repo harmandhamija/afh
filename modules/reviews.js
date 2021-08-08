@@ -40,27 +40,58 @@ export default function displayReviews() {
 
     reviewsArray.forEach((review) => {
 
-        const reviewsContent = document.querySelector('.reviews-content');
+        // const reviewsContent = document.querySelector('.reviews-content');
+        const sliderContainer = document.querySelector('.slider-container');
 
-        const reviewsText = document.createElement('div');
-        reviewsText.setAttribute('class', 'reviews-text')
+        const sliderContent = document.createElement('div');
+        sliderContent.setAttribute('class', 'slider-content')
         
-        const customerReview = document.createElement('p');
-        customerReview.textContent = review.review;
-        customerReview.setAttribute('class', 'customer-review')
-        reviewsText.appendChild(customerReview);
+        const sliderText = document.createElement('p');
+        sliderText.textContent = review.review;
+        sliderText.setAttribute('class', 'slider-text')
+        sliderContent.appendChild(sliderText);
 
         const customerName = document.createElement('h3');
         customerName.textContent = review.name;
-        reviewsText.appendChild(customerName);
+        sliderContent.appendChild(customerName);
 
         const customerCity = document.createElement('p');
         customerCity.textContent = review.city;
-        reviewsText.appendChild(customerCity);
+        sliderContent.appendChild(customerCity);
 
-        reviewsContent.appendChild(reviewsText);
+        sliderContainer.appendChild(sliderContent);
 
     })
 }
 
-displayReviews();
+// review slider
+
+export function reviewSlider() {
+    const sliderButton = document.getElementsByClassName('slider-button');
+    const sliderContainer = document.querySelector('.slider-container');
+
+    sliderButton[0].addEventListener('click', function () {
+        sliderContainer.style.left = '0%';
+    })
+
+    sliderButton[1].addEventListener('click', function () {
+        sliderContainer.style.left = '-100%';
+    })
+
+    sliderButton[2].addEventListener('click', function () {
+        sliderContainer.style.left = '-200%';
+    })
+
+    sliderButton[3].addEventListener('click', function () {
+        sliderContainer.style.left = '-300%';
+    })
+
+    sliderButton[4].addEventListener('click', function () {
+        sliderContainer.style.left = '-400%';
+    })
+
+    sliderButton[5].addEventListener('click', function () {
+        sliderContainer.style.left = '-500%';
+    })
+
+}
