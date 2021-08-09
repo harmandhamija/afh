@@ -3,32 +3,48 @@
 export default function studyImages() {
 
     const imagesArray = [
+        {
+            path: './assets/ul-graham-study.jpg',
+            alt: 'Study Table'
+            },
+        {
+            path: './assets/ul-bond-study.jpg',
+            alt: 'Study Table'
+            },
+        {
+            path: './assets/ul-austen-study.jpg',
+            alt: 'Study Table'
+            },
+        {
+            path: './assets/ul-anton-study.jpg',
+            alt: 'Study Table'
+            },
+        {
+            path: './assets/ul-wodehouse-study.jpg',
+            alt: 'Study Table'
+            },
+        {
+            path: './assets/ul-angelou-study.jpg',
+            alt: 'Study Table'
+            },
         // {
         //     path: './assets/ul-kuzma-study.jpg',
         //     alt: 'Study Table'
         // },
         {
-            path: './assets/ul-graham-study.jpg',
+            path: './assets/office-study-table-1.jpeg',
             alt: 'Study Table'
-        },
+            },
         {
-            path: './assets/ul-bond-study.jpg',
+            path: './assets/1-study.png',
             alt: 'Study Table'
-        },
+            },
         {
-            path: './assets/ul-austen-study.jpg',
+            path: './assets/office-study-table-2.jpeg',
             alt: 'Study Table'
-        },
+            },
         {
-            path: './assets/ul-anton-study.jpg',
-            alt: 'Study Table'
-        },
-        {
-            path: './assets/ul-wodehouse-study.jpg',
-            alt: 'Study Table'
-        },
-        {
-            path: './assets/ul-angelou-study.jpg',
+            path: './assets/office-study-table-3.jpeg',
             alt: 'Study Table'
         }
     ]

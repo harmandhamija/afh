@@ -30,7 +30,7 @@ export default function sofaImages() {
         {
             path: './assets/gl-regimen-chesterfield-sofa-3.jpg',
             alt: 'Sofa Set'
-        },
+            },
         {
             path: './assets/sofa-1.JPG',
             alt: 'Sofa Set'
@@ -43,6 +43,10 @@ export default function sofaImages() {
             path: './assets/sofa-2.JPG',
             alt: 'Sofa Set'
             },
+        {
+            path: './assets/sofa-scandavian.jpeg',
+            alt: 'Sofa Set'
+            }
     ]
 
     imagesArray.forEach((image) => {

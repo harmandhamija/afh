@@ -446,6 +446,34 @@ header h1{
     margin-top: 2.5rem;
 }
 
+.slider-text::before{
+    background-image: url(./assets/left-quotes-sign.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    opacity: 0.3;
+}
+
+.slider-text::after{
+    background-image: url(./assets/right-quotes-sign.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    right: -25px;
+    bottom: -15px;
+    opacity: 0.3;
+}
+
 /* reviews slider */
 
 .reviews-slider{
@@ -467,13 +495,15 @@ header h1{
 
 .slider-content{
     background-color: rgba(207, 186, 166, 0.2);
-    padding: 2.5rem 1.5rem;
+    /* padding: 3.5rem 1.5rem; */
+    padding: 3.5rem;
     border-radius: 10px;
     display: flex;
     flex: 1;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    /* position: relative; */
 }
 
 .slider-content h3{
@@ -483,6 +513,7 @@ header h1{
 .slider-text{
     font-style: italic;
     font-size: 1.5rem;
+    position: relative;
     /* width: 90%; */
 }
 
@@ -492,6 +523,7 @@ header h1{
     margin: 2rem 1rem 0;
     border-radius: 100%;
     cursor: pointer;
+    outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -794,7 +826,8 @@ footer span{
 .ss-images,
 .seating-images,
 .tv-units-images,
-.study-images{
+.study-images,
+.coffee-table-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -805,7 +838,8 @@ footer span{
 .seating-images img,
 .beds-images img,
 .tv-units-images img,
-.study-images img{
+.study-images img,
+.coffee-table-images img{
     width: 100%;
 }
 
@@ -821,7 +855,8 @@ footer span{
 .ss-images div,
 .beds-images div,
 .tv-units-images div,
-.study-images div{
+.study-images div,
+.coffee-table-images div{
     width: 32%;
     margin-bottom: 2rem;
 }
@@ -896,7 +931,8 @@ footer span{
     }
 
     .tv-units-images div,
-    .study-images div{
+    .study-images div,
+    .coffee-table-images div{
         width: 48%;
     }
 }
@@ -1019,6 +1055,10 @@ footer span{
     .tv-units-images div,
     .study-images div{
         width: 100%;
+    }
+
+    .coffee-table-images div{
+        width: 90%;
     }
 }
 
