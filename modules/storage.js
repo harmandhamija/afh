@@ -28,6 +28,18 @@ export default function storageImages() {
             alt: 'storage Cabinet'
             },
         {
+            path: './assets/ul-bocado-storage.jpg',
+            alt: 'storage Cabinet'
+            },
+        {
+            path: './assets/ul-baltoro-storage.jpg',
+            alt: 'storage Cabinet'
+            },
+        {
+            path: './assets/ul-ohio-storage.jpg',
+            alt: 'storage Cabinet'
+            },
+        {
             path: './assets/pp-pyrope-storage.webp',
             alt: 'storage Cabinet'
             },
