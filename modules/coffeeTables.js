@@ -28,6 +28,14 @@ export default function coffeeTableImages() {
             alt: 'Wooden Coffee Table'
             },
         {
+            path: './assets/pp-kiosk-coffee.webp',
+            alt: 'Wooden Coffee Table'
+            },
+        {
+            path: './assets/pp-daist-coffee.webp',
+            alt: 'Wooden Coffee Table'
+            },
+        {
             path: './assets/pp-max-coffee-2.webp',
             alt: 'Wooden Coffee Table'
             },
@@ -38,15 +46,7 @@ export default function coffeeTableImages() {
         {
             path: './assets/pp-eco-coffee.webp',
             alt: 'Wooden Coffee Table'
-            },
-        {
-            path: './assets/pp-kiosk-coffee.webp',
-            alt: 'Wooden Coffee Table'
-            },
-        {
-            path: './assets/pp-daist-coffee.webp',
-            alt: 'Wooden Coffee Table'
-        }
+            }
     ]
 
     imagesArray.forEach((image) => {

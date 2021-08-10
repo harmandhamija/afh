@@ -540,6 +540,7 @@ header h1{
 
 .slider-button:checked{
     background-color: black;
+    outline: none;
 }
 
 /* Contact styles */
@@ -827,7 +828,8 @@ footer span{
 .seating-images,
 .tv-units-images,
 .study-images,
-.coffee-table-images{
+.coffee-table-images,
+.storage-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -839,7 +841,8 @@ footer span{
 .beds-images img,
 .tv-units-images img,
 .study-images img,
-.coffee-table-images img{
+.coffee-table-images img,
+.storage-images img{
     width: 100%;
 }
 
@@ -856,7 +859,8 @@ footer span{
 .beds-images div,
 .tv-units-images div,
 .study-images div,
-.coffee-table-images div{
+.coffee-table-images div,
+.storage-images div{
     width: 32%;
     margin-bottom: 2rem;
 }
@@ -1020,6 +1024,10 @@ footer span{
     .beds-heading p{
         width: 100%;
     }
+
+    .storage-images div{
+        width: 47%;
+    }
 }
 
 @media (max-width:650px) {
@@ -1122,6 +1130,10 @@ footer span{
 
     .reviews-content{
         width: 95%;
+    }
+
+    .storage-images div{
+        width: 100%;
     }
 }
 

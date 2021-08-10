@@ -20,11 +20,19 @@ export default function tvUnitImages() {
             alt: 'Wooden TV Units'
         },
         {
-            path: './assets/ul-sawyer-wall-tv.jpg',
+            path: './assets/ul-euler-tv.jpg',
+            alt: 'Wooden TV Units'
+        },
+        {
+            path: './assets/ul-taarkashi-tv.jpg',
             alt: 'Wooden TV Units'
         },
         {
             path: './assets/ul-celestin-tv.jpg',
+            alt: 'Wooden TV Units'
+        },
+        {
+            path: './assets/ul-sawyer-wall-tv.jpg',
             alt: 'Wooden TV Units'
         },
         {
@@ -33,10 +41,6 @@ export default function tvUnitImages() {
         },
         {
             path: './assets/ul-iwaki-tv.jpg',
-            alt: 'Wooden TV Units'
-        },
-        {
-            path: './assets/ul-euler-tv.jpg',
             alt: 'Wooden TV Units'
         }
     ]
