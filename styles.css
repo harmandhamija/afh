@@ -830,7 +830,8 @@ footer span{
 .study-images,
 .coffee-table-images,
 .storage-images,
-.cupboard-images{
+.cupboard-images,
+.bookshelf-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -844,7 +845,8 @@ footer span{
 .study-images img,
 .coffee-table-images img,
 .storage-images img,
-.cupboard-images img{
+.cupboard-images img,
+.bookshelf-images img{
     width: 100%;
 }
 
@@ -863,7 +865,8 @@ footer span{
 .study-images div,
 .coffee-table-images div,
 .storage-images div,
-.cupboard-images div{
+.cupboard-images div,
+.bookshelf-images div{
     width: 32%;
     margin-bottom: 2rem;
 }
@@ -903,7 +906,7 @@ footer span{
 
 /* dining page */
 
-.dining-images{
+/* .dining-images{
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -916,7 +919,7 @@ footer span{
 
 .dining-images img{
     width: 100%;
-}
+} */
 
 /* beds page */
 
@@ -938,7 +941,6 @@ footer span{
     }
 
     .tv-units-images div,
-    .study-images div,
     .coffee-table-images div{
         width: 48%;
     }
@@ -962,8 +964,10 @@ footer span{
         width: 45%;
     }
 
+    .ss-images div,
     .cupboard-images div,
-    .seating-images div{
+    .seating-images div,
+    .study-images div{
         width: 48%;
     }
 }
@@ -1032,7 +1036,8 @@ footer span{
         width: 100%;
     }
 
-    .storage-images div{
+    .storage-images div,
+    .bookshelf-images div{
         width: 47%;
     }
 }
@@ -1068,7 +1073,7 @@ footer span{
 
     .beds-images div,
     .tv-units-images div,
-    .study-images div{
+    .ss-images div{
         width: 100%;
     }
 
@@ -1086,9 +1091,9 @@ footer span{
         padding-top: 20vh;
     }
 
-    .ss-images div,
-    .cupboard-images div{
-    width: 100%;
+    .cupboard-images div,
+    .study-images div{
+        width: 100%;
     }
 
     .seating-images{
@@ -1152,6 +1157,10 @@ footer span{
 
     p{
         font-size: 1.6rem;
+    }
+
+    .bookshelf-images div{
+        width: 100%;
     }
 
     .seating-images div{
