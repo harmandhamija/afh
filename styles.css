@@ -8,8 +8,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/*  */
-
 /* global styles */
 
 html {
@@ -23,7 +21,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
     position: relative;
-    /* background-color: black; */
 }
 
 .wrapper {
@@ -43,8 +40,6 @@ ul{
 
 h1{
     font-family: 'Josefin Sans', sans-serif;
-    /* color: #cfbaa6; */
-    /* color: #626262; */
     color: #2e1c0b;
     font-weight: 400;
     font-size: 5rem;
@@ -267,7 +262,6 @@ header h1{
 
 .sm-icons ul li{
     font-size: 2.8rem;
-    /* opacity: 0.8; */
     transition: all 0.3s ease;
 }
 
@@ -436,7 +430,6 @@ header h1{
 
 .reviews-content{
     margin: 6rem auto 0;
-    /* width: 95%; */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -495,7 +488,6 @@ header h1{
 
 .slider-content{
     background-color: rgba(207, 186, 166, 0.2);
-    /* padding: 3.5rem 1.5rem; */
     padding: 3.5rem;
     border-radius: 10px;
     display: flex;
@@ -503,7 +495,6 @@ header h1{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
 }
 
 .slider-content h3{
@@ -600,7 +591,6 @@ header h1{
 label,
 input,
 textarea{
-    /* background-color: whitesmoke; */
     border: 1px solid black;
     margin-bottom: 2rem;
     padding: 1rem;
@@ -628,7 +618,6 @@ form button{
     background-color: transparent;
     border: 3px solid #cfbaa6;
     border-radius: 2px;
-    /* color: whitesmoke; */
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -645,9 +634,6 @@ footer{
     background: -webkit-linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
     background: linear-gradient(-20deg,#cfbaa6 -60%,#000000 50%, #cfbaa6 160%);
     padding: 0.5rem 0;
-    /* position: absolute;
-    bottom: 0;
-    width: 100%; */
 }
 
 footer p{
@@ -687,8 +673,6 @@ footer span{
 }
 
 .scroll-top:hover{
-    /* background: -webkit-linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%);
-    background: linear-gradient(-20deg,#cfbaa6 -5%,#000000 50%, #cfbaa6 110%); */
     color: white;
 }
 
@@ -774,9 +758,7 @@ footer span{
 }
 
 .pages-main{
-    /* margin-top: 5rem; */
     text-align: center;
-    /* min-height: 45.8vh; */
 }
 
 .pages-heading,
@@ -881,26 +863,6 @@ footer span{
     margin-bottom: 2rem;
 }
 
-/* .sofa-category{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.sofa-category h4{
-    margin-top: 1rem;
-}
-
-.fabric-category,
-.wooden-category{
-    width: 45%;
-}
-
-.fabric-category img,
-.wooden-category img{
-    width: 100%;
-} */
 
 /* seating page */
 
@@ -922,6 +884,59 @@ footer span{
     justify-content: space-evenly;
 }
 
+/* all furniture page */
+
+.product-main{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6rem 0;
+    flex-wrap: wrap;
+}
+
+.shoerack-container,
+.wallshelf-container{
+    width: 35%;
+    position: relative;
+}
+
+.shoerack-image,
+.wallshelf-image{
+    width: 100%;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.overlay-shoe,
+.overlay-wallshelf{
+    position: absolute;
+    top: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.overlay-shoe h4,
+.overlay-wallshelf h4{
+    border: 3px solid rgba(207, 186, 166,0.7);
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.overlay-shoe h4:hover,
+.overlay-wallshelf h4:hover{
+    background-color: #cfbaa6;
+    color: black;
+}
+
+.all-furniture-footer{
+    display: none;
+}
+
 /* media queries */
 
 @media (max-width:1050px) {
@@ -941,6 +956,11 @@ footer span{
     .wallshelf-images div{
         width: 32%;
         margin-bottom: 1rem;
+    }
+
+    .shoerack-container,
+    .wallshelf-container{
+        width: 45%;
     }
 }
 
@@ -1039,6 +1059,18 @@ footer span{
     .bookshelf-images div{
         width: 47%;
     }
+
+    /* all furniture page */
+
+    .shoerack-container,
+    .wallshelf-container{
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    .all-furniture-footer{
+        display: block;
+    }
 }
 
 @media (max-width:650px) {
@@ -1083,6 +1115,7 @@ footer span{
     .coffee-table-images div{
         width: 90%;
     }
+
 }
 
 @media (max-width:600px){
@@ -1170,6 +1203,8 @@ footer span{
         width: 80%;
     }
 }
+
+/* styles end */
 
 
 
