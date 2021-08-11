@@ -32,6 +32,8 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 ul{
     margin: 0;
@@ -788,7 +790,7 @@ footer span{
 .beds-heading p{
     font-size: 1.3rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .see-more,
@@ -834,6 +836,10 @@ footer span{
 .shoerack-images img,
 .wallshelf-images img{
     width: 100%;
+}
+
+.coming-soon{
+    margin: 2rem 0;
 }
 
 .coming-soon h5{
@@ -889,7 +895,7 @@ footer span{
 .product-main{
     display: flex;
     justify-content: space-evenly;
-    margin: 6rem 0;
+    margin: 6rem 0 2rem;
     flex-wrap: wrap;
 }
 
@@ -897,6 +903,7 @@ footer span{
 .wallshelf-container{
     width: 35%;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .shoerack-image,
@@ -922,8 +929,9 @@ footer span{
 
 .overlay-shoe h4,
 .overlay-wallshelf h4{
+    font-size: 1.5rem;
+    padding: 8px;
     border: 3px solid rgba(207, 186, 166,0.7);
-    padding: 10px;
     transition: all 0.5s ease;
 }
 
@@ -1065,7 +1073,7 @@ footer span{
     .shoerack-container,
     .wallshelf-container{
         width: 75%;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
     }
 
     .all-furniture-footer{
@@ -1183,6 +1191,11 @@ footer span{
     .storage-images div,
     .shoerack-images div{
         width: 100%;
+    }
+
+    .product-main h4{
+        font-size: 1.3rem;
+        padding: 7px;
     }
 }
 
