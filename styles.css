@@ -831,7 +831,9 @@ footer span{
 .coffee-table-images,
 .storage-images,
 .cupboard-images,
-.bookshelf-images{
+.bookshelf-images,
+.shoerack-images,
+.wallshelf-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -846,7 +848,9 @@ footer span{
 .coffee-table-images img,
 .storage-images img,
 .cupboard-images img,
-.bookshelf-images img{
+.bookshelf-images img,
+.shoerack-images img,
+.wallshelf-images img{
     width: 100%;
 }
 
@@ -866,8 +870,14 @@ footer span{
 .coffee-table-images div,
 .storage-images div,
 .cupboard-images div,
-.bookshelf-images div{
+.bookshelf-images div,
+.shoerack-images div{
     width: 32%;
+    margin-bottom: 2rem;
+}
+
+.wallshelf-images div{
+    width: 23%;
     margin-bottom: 2rem;
 }
 
@@ -904,23 +914,6 @@ footer span{
     margin-bottom: 2rem;
 }
 
-/* dining page */
-
-/* .dining-images{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-around;
-}
-
-.dining-images div{
-    width: 33%;
-}
-
-.dining-images img{
-    width: 100%;
-} */
-
 /* beds page */
 
 .beds-images{
@@ -943,6 +936,11 @@ footer span{
     .tv-units-images div,
     .coffee-table-images div{
         width: 48%;
+    }
+
+    .wallshelf-images div{
+        width: 32%;
+        margin-bottom: 1rem;
     }
 }
 
@@ -967,7 +965,8 @@ footer span{
     .ss-images div,
     .cupboard-images div,
     .seating-images div,
-    .study-images div{
+    .study-images div,
+    .shoerack-images div{
         width: 48%;
     }
 }
@@ -1077,6 +1076,10 @@ footer span{
         width: 100%;
     }
 
+    .wallshelf-images div{
+        width: 48%;
+    }
+
     .coffee-table-images div{
         width: 90%;
     }
@@ -1099,7 +1102,6 @@ footer span{
     .seating-images{
         width: 100%;
     }
-
 }
 
 @media (max-width:475px){
@@ -1145,7 +1147,8 @@ footer span{
         width: 95%;
     }
 
-    .storage-images div{
+    .storage-images div,
+    .shoerack-images div{
         width: 100%;
     }
 }
@@ -1166,7 +1169,6 @@ footer span{
     .seating-images div{
         width: 80%;
     }
-
 }
 
 
