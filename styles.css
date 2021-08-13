@@ -132,6 +132,7 @@ header h1{
 
 .menu-list.show{
     transform: translateX(0%);
+    overflow: scroll;
 }
 
 .menu-list-container{
@@ -726,6 +727,7 @@ footer span{
 
 .nav-product a{
     color: black;
+    padding: 1.5rem 0;
 }
 
 .products-navigate{
@@ -817,7 +819,8 @@ footer span{
 .cupboard-images,
 .bookshelf-images,
 .shoerack-images,
-.wallshelf-images{
+.wallshelf-images,
+.dining-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -834,7 +837,8 @@ footer span{
 .cupboard-images img,
 .bookshelf-images img,
 .shoerack-images img,
-.wallshelf-images img{
+.wallshelf-images img,
+.dining-images img{
     width: 100%;
 }
 
@@ -859,7 +863,8 @@ footer span{
 .storage-images div,
 .cupboard-images div,
 .bookshelf-images div,
-.shoerack-images div{
+.shoerack-images div,
+.dining-images div{
     width: 32%;
     margin-bottom: 2rem;
 }
@@ -890,7 +895,7 @@ footer span{
     justify-content: space-evenly;
 }
 
-/* all furniture page */
+/* more furniture page */
 
 .product-main{
     display: flex;
@@ -899,22 +904,19 @@ footer span{
     flex-wrap: wrap;
 }
 
-.shoerack-container,
-.wallshelf-container{
+.furniture-container{
     width: 35%;
     position: relative;
     margin-bottom: 2rem;
 }
 
-.shoerack-image,
-.wallshelf-image{
+.furniture-main-image{
     width: 100%;
     opacity: 0.5;
     transition: opacity 0.5s ease;
 }
 
-.overlay-shoe,
-.overlay-wallshelf{
+.overlay-image{
     position: absolute;
     top: 0;
     color: white;
@@ -927,16 +929,14 @@ footer span{
     transition: opacity 0.5s ease;
 }
 
-.overlay-shoe h4,
-.overlay-wallshelf h4{
+.overlay-image h4{
     font-size: 1.5rem;
     padding: 8px;
     border: 3px solid rgba(207, 186, 166,0.7);
     transition: all 0.5s ease;
 }
 
-.overlay-shoe h4:hover,
-.overlay-wallshelf h4:hover{
+.overlay-image h4:hover{
     background-color: #cfbaa6;
     color: black;
 }
@@ -957,7 +957,8 @@ footer span{
     }
 
     .tv-units-images div,
-    .coffee-table-images div{
+    .coffee-table-images div,
+    .dining-images div{
         width: 48%;
     }
 
@@ -966,8 +967,7 @@ footer span{
         margin-bottom: 1rem;
     }
 
-    .shoerack-container,
-    .wallshelf-container{
+    .furniture-container{
         width: 45%;
     }
 }
@@ -1070,8 +1070,7 @@ footer span{
 
     /* all furniture page */
 
-    .shoerack-container,
-    .wallshelf-container{
+    .furniture-container{
         width: 75%;
         /* margin-bottom: 2rem; */
     }
@@ -1112,7 +1111,8 @@ footer span{
 
     .beds-images div,
     .tv-units-images div,
-    .ss-images div{
+    .ss-images div,
+    .dining-images div{
         width: 100%;
     }
 
