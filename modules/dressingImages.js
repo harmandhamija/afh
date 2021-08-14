@@ -1,6 +1,8 @@
 // dressingImages.js
 
-export default function dressingImages() {
+import { setTwoImages } from "./productImagesFunction.js";
+
+function dressingImages() {
 
     const imagesArray = [
         {
@@ -41,7 +43,7 @@ export default function dressingImages() {
 
 dressingImages();
 
-export function dressingPpImages() {
+function dressingPpImages() {
 
     const imagesArray = [
         {
@@ -118,22 +120,7 @@ export function dressingPpImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const dressingImages = document.querySelector('.dressing-pp-images');
-
-        const imageDiv = document.createElement('div');
-
-        const dressingImage = document.createElement('img');
-
-        dressingImage.src = `${image.path}`;
-        dressingImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(dressingImage);
-
-        dressingImages.appendChild(imageDiv);
-    })
-
+    setTwoImages(imagesArray);
 }
 
 dressingPpImages();

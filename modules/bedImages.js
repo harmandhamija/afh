@@ -1,6 +1,8 @@
 // beds.js
 
-export default function bedsImages() {
+import setOneImages from "./productImagesFunction.js";
+
+function bedsImages() {
 
     const imagesArray = [
         {
@@ -65,22 +67,7 @@ export default function bedsImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const bedsImages = document.querySelector('.beds-images');
-
-        const imageDiv = document.createElement('div');
-
-        const bedImage = document.createElement('img');
-
-        bedImage.src = `${image.path}`;
-        bedImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(bedImage);
-
-        bedsImages.appendChild(imageDiv);
-    })
-
+    setOneImages(imagesArray);
 }
 
 bedsImages();

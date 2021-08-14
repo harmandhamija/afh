@@ -1,6 +1,6 @@
 // seating.js
 
-export default function seatingImages() {
+function seatingImages() {
 
     const imagesArray = [
         {

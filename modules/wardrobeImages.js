@@ -1,6 +1,8 @@
-// cupBoardImages.js
+// wardrobeImages.js
 
-export default function cupBoardImages() {
+import { setTwoImages } from "./productImagesFunction.js";
+
+function wardrobeImages() {
 
     const imagesArray = [
         {
@@ -69,23 +71,8 @@ export default function cupBoardImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const cupBoardImages = document.querySelector('.cupboard-images');
-
-        const imageDiv = document.createElement('div');
-
-        const cupBoardImage = document.createElement('img');
-
-        cupBoardImage.src = `${image.path}`;
-        cupBoardImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(cupBoardImage);
-
-        cupBoardImages.appendChild(imageDiv);
-    })
-
+    setTwoImages(imagesArray);
 }
 
-cupBoardImages();
+wardrobeImages();
 

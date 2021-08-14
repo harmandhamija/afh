@@ -814,52 +814,34 @@ footer span{
     display: none;
 }
 
-.ss-images,
+.set1-product-images,
+.set2-product-images,
+.set3-product-images,
 .seating-images,
-.tv-units-images,
-.study-images,
-.coffee-table-images,
-.storage-images,
-.cupboard-images,
-.bookshelf-images,
 .shoerack-images,
 .wallshelf-images,
-.dining-images,
 .dressing-images,
-.dressing-pp-images,
-.bedside-tables-images,
-.more-bedtables-images{
-    margin-top: 6rem;
+.more-product-images{
+    /* margin-top: 6rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.dressing-pp-images,
-.more-bedtables-images{
-    margin-top: 0;
-}
-
-.more-bedtables-images{
+.more-product-images{
     display: none;
 }
 
-.ss-images img,
+.set1-product-images img,
+.set2-product-images img,
+.set3-product-images img,
 .seating-images img,
-.beds-images img,
-.tv-units-images img,
 .study-images img,
-.coffee-table-images img,
-.storage-images img,
 .cupboard-images img,
-.bookshelf-images img,
 .shoerack-images img,
 .wallshelf-images img,
-.dining-images img,
 .dressing-images img,
-.dressing-pp-images img,
-.bedside-tables-images img,
-.more-bedtables-images img{
+.more-product-images img{
     width: 100%;
 }
 
@@ -876,19 +858,14 @@ footer span{
 
 /* sofas page */
 
-.ss-images div,
-.beds-images div,
-.tv-units-images div,
+.set1-product-images div,
+.set2-product-images div,
+.set3-product-images div,
 .study-images div,
-.coffee-table-images div,
-.storage-images div,
 .cupboard-images div,
-.bookshelf-images div,
 .shoerack-images div,
-.dining-images div,
-.dressing-pp-images div,
-.bedside-tables-images div,
-.more-bedtables-images div{
+.set2-product-images div,
+.more-product-images div{
     width: 32%;
     margin-bottom: 2rem;
 }
@@ -916,14 +893,6 @@ footer span{
     margin-bottom: 2rem;
 }
 
-/* beds page */
-
-.beds-images{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 /* bedside tables page */
 
 .see-more-button{
@@ -934,7 +903,6 @@ footer span{
     transition: all 0.5s ease;
     cursor: pointer;
     font-size: 1.2rem;
-    /* font-weight: bold; */
 }
 
 .see-more-button p{
@@ -990,10 +958,6 @@ footer span{
     color: black;
 }
 
-/* .all-furniture-footer{
-    display: none;
-} */
-
 /* media queries */
 
 @media (max-width:1050px) {
@@ -1005,9 +969,7 @@ footer span{
         width: 53%;
     }
 
-    .tv-units-images div,
-    .coffee-table-images div,
-    .dining-images div{
+    .set1-product-images div{
         width: 48%;
     }
 
@@ -1039,17 +1001,17 @@ footer span{
         width: 100%;
     }
     
-    .beds-images div{
-        width: 45%;
-    }
-
-    .ss-images div,
     .cupboard-images div,
     .seating-images div,
     .study-images div,
     .shoerack-images div,
-    .dressing-pp-images div{
+    .set2-product-images div,
+    .more-product-images div{
         width: 48%;
+    }
+
+    #more-bedtables div{
+        width: 32%;
     }
 }
 
@@ -1117,13 +1079,8 @@ footer span{
         width: 100%;
     }
 
-    .storage-images div,
-    .bookshelf-images div{
-        width: 47%;
-    }
-
-    .bedside-tables-images div,
-    .more-bedtables-images div{
+    .set3-product-images div,
+    #more-bedtables div{
         width: 48%;
     }
 
@@ -1131,12 +1088,7 @@ footer span{
 
     .furniture-container{
         width: 75%;
-        /* margin-bottom: 2rem; */
     }
-
-    /* .all-furniture-footer{
-        display: block;
-    } */
 }
 
 @media (max-width:650px) {
@@ -1168,21 +1120,13 @@ footer span{
         text-align: left;
     }
 
-    .beds-images div,
-    .tv-units-images div,
-    .ss-images div,
-    .dining-images div{
+    .set1-product-images div{
         width: 100%;
     }
 
     .wallshelf-images div{
         width: 48%;
     }
-
-    .coffee-table-images div{
-        width: 90%;
-    }
-
 }
 
 @media (max-width:600px){
@@ -1194,9 +1138,8 @@ footer span{
         padding-top: 20vh;
     }
 
-    .cupboard-images div,
-    .study-images div,
-    .dressing-pp-images div{
+    .more-product-images div,
+    .set2-product-images div{
         width: 100%;
     }
 
@@ -1248,10 +1191,9 @@ footer span{
         width: 95%;
     }
 
-    .storage-images div,
+    .set3-product-images div,
     .shoerack-images div,
-    .bedside-tables-images div,
-    .more-bedtables-images div{
+    #more-bedtables div{
         width: 100%;
     }
 
@@ -1270,16 +1212,12 @@ footer span{
         font-size: 1.6rem;
     }
 
-    .bookshelf-images div{
-        width: 100%;
-    }
-
     .seating-images div{
         width: 80%;
     }
 }
 
-/* styles end */
+/* media queries end */
 
 
 

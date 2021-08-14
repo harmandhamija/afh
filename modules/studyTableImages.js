@@ -1,6 +1,9 @@
 // studyTable.js
 
-export default function studyImages() {
+import seeMoreImages from "./seeMoreImages.js";
+import { setTwoImages, moreProductImages } from "./productImagesFunction.js";
+
+function studyImages() {
 
     const imagesArray = [
         {
@@ -51,6 +54,16 @@ export default function studyImages() {
             path: './assets/pp-attikos-study.webp',
             alt: 'Study Table'
         },
+    ]
+
+    setTwoImages(imagesArray);
+}
+
+studyImages();
+
+export function moreStudyImages() {
+
+    const moreImagesArray = [
         {
             path: './assets/pp-myoki-study.webp',
             alt: 'Study Table'
@@ -74,26 +87,11 @@ export default function studyImages() {
         {
             path: './assets/office-study-table-3.jpeg',
             alt: 'Study Table'
-        },
-
+        }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const studyImages = document.querySelector('.study-images');
-
-        const imageDiv = document.createElement('div');
-
-        const studyImage = document.createElement('img');
-
-        studyImage.src = `${image.path}`;
-        studyImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(studyImage);
-
-        studyImages.appendChild(imageDiv);
-    })
-
+    seeMoreImages(moreImagesArray);
+    moreProductImages(moreImagesArray);
 }
 
-studyImages();
+moreStudyImages();

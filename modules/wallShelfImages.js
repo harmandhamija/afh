@@ -1,6 +1,6 @@
 // wallShelfImages.js
 
-export default function wallShelfImages() {
+function wallShelfImages() {
 
     const imagesArray = [
         {

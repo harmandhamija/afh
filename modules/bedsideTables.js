@@ -1,6 +1,9 @@
 // bedsideTables.js
 
-export default function bedsideTablesImages() {
+import { moreProductImages, setThreeImages } from "./productImagesFunction.js";
+import seeMoreImages from "./seeMoreImages.js";
+
+function bedsideTablesImages() {
 
     const imagesArray = [
         {
@@ -53,34 +56,18 @@ export default function bedsideTablesImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const bedsideTablesImages = document.querySelector('.bedside-tables-images');
-
-        const imageDiv = document.createElement('div');
-
-        const bedsideTablesImage = document.createElement('img');
-
-        bedsideTablesImage.src = `${image.path}`;
-        bedsideTablesImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(bedsideTablesImage);
-
-        bedsideTablesImages.appendChild(imageDiv);
-    })
-
+    setThreeImages(imagesArray);
 }
 
 bedsideTablesImages();
 
-
-export function moreBedTableImages() {
+function moreBedTableImages() {
 
     const moreImagesArray = [
-        {
-            path: './assets/pp-dado-bedside.jpg',
-            alt: 'Wooden Bedside Table'
-        },
+        // {
+        //     path: './assets/pp-dado-bedside.jpg',
+        //     alt: 'Wooden Bedside Table'
+        // },
         {
             path: './assets/pp-texas-bedside.webp',
             alt: 'Wooden Bedside Table'
@@ -147,35 +134,8 @@ export function moreBedTableImages() {
         }
     ]
 
-    const seeMoreButton = document.querySelector('.see-more-button');
-    const moreBedTableImages = document.querySelector('.more-bedtables-images');
-
-    const bedsideArrayLength = document.createElement('p');
-    bedsideArrayLength.textContent = `(${moreImagesArray.length})`;
-
-    seeMoreButton.appendChild(bedsideArrayLength);
-
-
-    seeMoreButton.addEventListener('click', function() {
-        moreBedTableImages.style.display = 'flex';
-        seeMoreButton.style.display = 'none';
-    })
-
-    moreImagesArray.forEach((image) => {
-
-        const moreBedTableImages = document.querySelector('.more-bedtables-images');
-
-        const imageDiv = document.createElement('div');
-
-        const moreBedTableImage = document.createElement('img');
-
-        moreBedTableImage.src = `${image.path}`;
-        moreBedTableImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(moreBedTableImage);
-
-        moreBedTableImages.appendChild(imageDiv);
-    })
+    seeMoreImages(moreImagesArray);
+    moreProductImages(moreImagesArray);
 }
 
 moreBedTableImages();

@@ -1,6 +1,8 @@
 // sofaImages.js
 
-export default function sofaImages() {
+import { setTwoImages } from "./productImagesFunction.js";
+
+function sofaImages() {
 
     const imagesArray = [
         {
@@ -61,21 +63,23 @@ export default function sofaImages() {
             }
     ]
 
-    imagesArray.forEach((image) => {
+    setTwoImages(imagesArray);
 
-        const ssImages = document.querySelector('.ss-images');
+    // imagesArray.forEach((image) => {
 
-        const imageDiv = document.createElement('div');
+    //     const ssImages = document.querySelector('.ss-images');
 
-        const sofaImage = document.createElement('img');
+    //     const imageDiv = document.createElement('div');
 
-        sofaImage.src = `${image.path}`;
-        sofaImage.alt = `${image.alt}`;
+    //     const sofaImage = document.createElement('img');
 
-        imageDiv.appendChild(sofaImage);
-        ssImages.appendChild(imageDiv);
+    //     sofaImage.src = `${image.path}`;
+    //     sofaImage.alt = `${image.alt}`;
 
-    })
+    //     imageDiv.appendChild(sofaImage);
+    //     ssImages.appendChild(imageDiv);
+
+    // })
 
 }
 

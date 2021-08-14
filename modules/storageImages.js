@@ -1,6 +1,8 @@
 // storage.js
 
-export default function storageImages() {
+import { setThreeImages } from "./productImagesFunction.js";
+
+function storageImages() {
 
     const imagesArray = [
         {
@@ -53,22 +55,7 @@ export default function storageImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const storageImages = document.querySelector('.storage-images');
-
-        const imageDiv = document.createElement('div');
-
-        const storageImage = document.createElement('img');
-
-        storageImage.src = `${image.path}`;
-        storageImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(storageImage);
-
-        storageImages.appendChild(imageDiv);
-    })
-
+    setThreeImages(imagesArray);
 }
 
 storageImages();

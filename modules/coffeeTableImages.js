@@ -1,6 +1,8 @@
 // coffeeTables.js
 
-export default function coffeeTableImages() {
+import setOneImages from "./productImagesFunction.js";
+
+function coffeeTableImages() {
 
     const imagesArray = [
         {
@@ -49,22 +51,7 @@ export default function coffeeTableImages() {
             }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const coffeeTableImages = document.querySelector('.coffee-table-images');
-
-        const imageDiv = document.createElement('div');
-
-        const coffeeTableImage = document.createElement('img');
-
-        coffeeTableImage.src = `${image.path}`;
-        coffeeTableImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(coffeeTableImage);
-
-        coffeeTableImages.appendChild(imageDiv);
-    })
-
+    setOneImages(imagesArray);
 }
 
 coffeeTableImages();

@@ -1,6 +1,8 @@
 // dining.js
 
-export default function diningImages() {
+import setOneImages from "./productImagesFunction.js";
+
+function diningImages() {
 
     const imagesArray = [
         {
@@ -57,22 +59,7 @@ export default function diningImages() {
         // }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const diningImages = document.querySelector('.dining-images');
-
-        const imageDiv = document.createElement('div');
-
-        const diningImage = document.createElement('img');
-
-        diningImage.src = `${image.path}`;
-        diningImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(diningImage);
-
-        diningImages.appendChild(imageDiv);
-    })
-
+    setOneImages(imagesArray);
 }
 
 diningImages();

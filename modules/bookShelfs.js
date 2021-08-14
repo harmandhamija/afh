@@ -1,6 +1,8 @@
 // bookShelfs.js
 
-export default function bookShelfImages() {
+import { setThreeImages } from "./productImagesFunction.js";
+
+function bookShelfImages() {
 
     const imagesArray = [
         {
@@ -45,21 +47,7 @@ export default function bookShelfImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const bookShelfImages = document.querySelector('.bookshelf-images');
-
-        const imageDiv = document.createElement('div');
-
-        const bookShelfImage = document.createElement('img');
-
-        bookShelfImage.src = `${image.path}`;
-        bookShelfImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(bookShelfImage);
-
-        bookShelfImages.appendChild(imageDiv);
-    })
+    setThreeImages(imagesArray);
 
 }
 

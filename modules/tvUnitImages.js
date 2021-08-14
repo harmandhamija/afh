@@ -1,6 +1,8 @@
 // tvUnits.js
 
-export default function tvUnitImages() {
+import setOneImages from "./productImagesFunction.js";
+
+function tvUnitImages() {
 
     const imagesArray = [
         {
@@ -45,22 +47,7 @@ export default function tvUnitImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
-
-        const tvUnitImages = document.querySelector('.tv-units-images');
-
-        const imageDiv = document.createElement('div');
-
-        const tvUnitImage = document.createElement('img');
-
-        tvUnitImage.src = `${image.path}`;
-        tvUnitImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(tvUnitImage);
-
-        tvUnitImages.appendChild(imageDiv);
-    })
-
+    setOneImages(imagesArray);
 }
 
 tvUnitImages();

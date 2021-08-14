@@ -1,7 +1,6 @@
 // shoeRakcs.js
 
-
-export default function shoeRackImages() {
+function shoeRackImages() {
 
     const imagesArray = [
         // {
