@@ -53,14 +53,6 @@ function wardrobeImages() {
             path: './assets/ul-hilton-4door-wardrobe.jpg',
             alt: 'Wooden Wardrobe'
         },
-        // {
-        //     path: './assets/pp-nariko-wardrobe.jpg',
-        //     alt: 'Wooden Wardrobe'
-        // },
-        // {
-        //     path: './assets/pp-kenzou-wardrobe.webp',
-        //     alt: 'Wooden Wardrobe'
-        // },
         {
             path: './assets/pp-eichi-wardrobe.webp',
             alt: 'Wooden Wardrobe'
@@ -75,4 +67,5 @@ function wardrobeImages() {
 }
 
 wardrobeImages();
+
 

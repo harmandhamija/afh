@@ -61,7 +61,7 @@ function studyImages() {
 
 studyImages();
 
-export function moreStudyImages() {
+function moreStudyImages() {
 
     const moreImagesArray = [
         {
