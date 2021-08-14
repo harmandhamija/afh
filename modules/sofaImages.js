@@ -32,6 +32,18 @@ export default function sofaImages() {
             alt: 'Sofa Set'
             },
         {
+            path: './assets/gl-norway-sectional-sofa.jpg',
+            alt: 'Sofa Set'
+            },
+        {
+            path: './assets/gl-munich-sectional-sofa.jpg',
+            alt: 'Sofa Set'
+            },
+        {
+            path: './assets/gl-california-sectional-sofa.jpg',
+            alt: 'Sofa Set'
+            },
+        {
             path: './assets/sofa-1.JPG',
             alt: 'Sofa Set'
             },
