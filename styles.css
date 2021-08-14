@@ -820,11 +820,17 @@ footer span{
 .bookshelf-images,
 .shoerack-images,
 .wallshelf-images,
-.dining-images{
+.dining-images,
+.dressing-images,
+.dressing-pp-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.dressing-pp-images{
+    margin-top: 0;
 }
 
 .ss-images img,
@@ -838,7 +844,9 @@ footer span{
 .bookshelf-images img,
 .shoerack-images img,
 .wallshelf-images img,
-.dining-images img{
+.dining-images img,
+.dressing-images img,
+.dressing-pp-images img{
     width: 100%;
 }
 
@@ -864,8 +872,14 @@ footer span{
 .cupboard-images div,
 .bookshelf-images div,
 .shoerack-images div,
-.dining-images div{
+.dining-images div,
+.dressing-pp-images div{
     width: 32%;
+    margin-bottom: 2rem;
+}
+
+.dressing-images div{
+    width: 48%;
     margin-bottom: 2rem;
 }
 
@@ -907,7 +921,7 @@ footer span{
 .furniture-container{
     width: 35%;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .furniture-main-image{
@@ -941,9 +955,9 @@ footer span{
     color: black;
 }
 
-.all-furniture-footer{
+/* .all-furniture-footer{
     display: none;
-}
+} */
 
 /* media queries */
 
@@ -985,6 +999,10 @@ footer span{
     .contact-text h1{
         font-size: 4.5rem;
     }
+
+    .dressing-images div{
+        width: 100%;
+    }
     
     .beds-images div{
         width: 45%;
@@ -994,7 +1012,8 @@ footer span{
     .cupboard-images div,
     .seating-images div,
     .study-images div,
-    .shoerack-images div{
+    .shoerack-images div,
+    .dressing-pp-images div{
         width: 48%;
     }
 }
@@ -1075,9 +1094,9 @@ footer span{
         /* margin-bottom: 2rem; */
     }
 
-    .all-furniture-footer{
+    /* .all-furniture-footer{
         display: block;
-    }
+    } */
 }
 
 @media (max-width:650px) {
@@ -1136,7 +1155,8 @@ footer span{
     }
 
     .cupboard-images div,
-    .study-images div{
+    .study-images div,
+    .dressing-pp-images div{
         width: 100%;
     }
 
