@@ -63,6 +63,10 @@ ul{
     list-style: none;
 }
 
+button{
+    border: none;
+}
+
 /* header styles */
 
 .header-container{
@@ -822,15 +826,22 @@ footer span{
 .wallshelf-images,
 .dining-images,
 .dressing-images,
-.dressing-pp-images{
+.dressing-pp-images,
+.bedside-tables-images,
+.more-bedtables-images{
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.dressing-pp-images{
+.dressing-pp-images,
+.more-bedtables-images{
     margin-top: 0;
+}
+
+.more-bedtables-images{
+    display: none;
 }
 
 .ss-images img,
@@ -846,7 +857,9 @@ footer span{
 .wallshelf-images img,
 .dining-images img,
 .dressing-images img,
-.dressing-pp-images img{
+.dressing-pp-images img,
+.bedside-tables-images img,
+.more-bedtables-images img{
     width: 100%;
 }
 
@@ -873,7 +886,9 @@ footer span{
 .bookshelf-images div,
 .shoerack-images div,
 .dining-images div,
-.dressing-pp-images div{
+.dressing-pp-images div,
+.bedside-tables-images div,
+.more-bedtables-images div{
     width: 32%;
     margin-bottom: 2rem;
 }
@@ -907,6 +922,25 @@ footer span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+/* bedside tables page */
+
+.see-more-button{
+    padding: 5px 10px;
+    margin-bottom: 2rem;
+    border: 3px solid #cfbaa6;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+}
+
+.see-more-button p{
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
 }
 
 /* more furniture page */
@@ -950,7 +984,8 @@ footer span{
     transition: all 0.5s ease;
 }
 
-.overlay-image h4:hover{
+.overlay-image h4:hover,
+.see-more-images button:hover{
     background-color: #cfbaa6;
     color: black;
 }
@@ -1087,6 +1122,11 @@ footer span{
         width: 47%;
     }
 
+    .bedside-tables-images div,
+    .more-bedtables-images div{
+        width: 48%;
+    }
+
     /* all furniture page */
 
     .furniture-container{
@@ -1209,7 +1249,9 @@ footer span{
     }
 
     .storage-images div,
-    .shoerack-images div{
+    .shoerack-images div,
+    .bedside-tables-images div,
+    .more-bedtables-images div{
         width: 100%;
     }
 
