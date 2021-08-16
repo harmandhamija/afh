@@ -1,6 +1,8 @@
 // dressingImages.js
 
 import { setTwoImages } from "./productImagesFunction.js";
+import seeMoreImages from "./seeMoreImages.js";
+import { moreProductImages } from "./productImagesFunction.js";
 
 function dressingImages() {
 
@@ -69,7 +71,17 @@ function dressingPpImages() {
         {
             path: './assets/pp-kosmo-premium-dressing.webp',
             alt: 'Wooden Dressing Unit'
-        },
+        }
+    ]
+
+    setTwoImages(imagesArray);
+}
+
+dressingPpImages();
+
+function moreDressingImages() {
+
+    const moreImagesArray = [
         {
             path: './assets/pp-crysler-dressing.webp',
             alt: 'Wooden Dressing Unit'
@@ -120,7 +132,9 @@ function dressingPpImages() {
         }
     ]
 
-    setTwoImages(imagesArray);
+    seeMoreImages(moreImagesArray);
+    moreProductImages(moreImagesArray);
 }
 
-dressingPpImages();
+moreDressingImages();
+
