@@ -40,9 +40,9 @@ export function setTwoImages(imagesArray) {
 
 export function moreProductImages(imagesArray) {
 
-    imagesArray.forEach((image) => {
+    const moreProductImages = document.querySelector('.more-product-images');
 
-        const moreProductImages = document.querySelector('.more-product-images');
+    imagesArray.forEach((image) => {
 
         const imageDiv = document.createElement('div');
 

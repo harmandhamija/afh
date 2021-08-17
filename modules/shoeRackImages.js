@@ -1,5 +1,7 @@
 // shoeRakcs.js
 
+import totalResults from "./totalResults.js";
+
 function shoeRackImages() {
 
     const imagesArray = [
@@ -57,9 +59,9 @@ function shoeRackImages() {
         }
     ]
 
-    imagesArray.forEach((image) => {
+    const shoeRackImages = document.querySelector('.shoerack-images');
 
-        const shoeRackImages = document.querySelector('.shoerack-images');
+    imagesArray.forEach((image) => {
 
         const imageDiv = document.createElement('div');
 
@@ -73,6 +75,7 @@ function shoeRackImages() {
         shoeRackImages.appendChild(imageDiv);
     })
 
+    totalResults(imagesArray, shoeRackImages)
 }
 
 shoeRackImages();

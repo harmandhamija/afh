@@ -1,5 +1,7 @@
 // wallShelfImages.js
 
+import totalResults from "./totalResults.js";
+
 function wallShelfImages() {
 
     const imagesArray = [
@@ -37,9 +39,9 @@ function wallShelfImages() {
         },
     ]
 
-    imagesArray.forEach((image) => {
+    const wallShelfImages = document.querySelector('.wallshelf-images');
 
-        const wallShelfImages = document.querySelector('.wallshelf-images');
+    imagesArray.forEach((image) => {
 
         const imageDiv = document.createElement('div');
 
@@ -52,6 +54,7 @@ function wallShelfImages() {
 
         wallShelfImages.appendChild(imageDiv);
     })
+    totalResults(imagesArray, wallShelfImages);
 
 }
 

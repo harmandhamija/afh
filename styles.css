@@ -793,7 +793,8 @@ footer span{
 }
 
 .pages-heading p,
-.beds-heading p{
+.beds-heading p,
+.total-results{
     font-size: 1.3rem;
     width: 80%;
     margin: 2rem auto;
@@ -883,13 +884,13 @@ footer span{
 
 /* seating page */
 
-.seating-images{
+/* .seating-images{
     width: 80%;
     margin: 0 auto;
-}
+} */
 
 .seating-images div{
-    width: 31%;
+    width: 23%;
     margin-bottom: 2rem;
 }
 
@@ -981,6 +982,10 @@ footer span{
     .furniture-container{
         width: 45%;
     }
+
+    .seating-images div{
+        width: 32%;
+    }
 }
 
 @media (max-width:900px) {
@@ -1002,7 +1007,7 @@ footer span{
     }
     
     .cupboard-images div,
-    .seating-images div,
+    /* .seating-images div, */
     .study-images div,
     .shoerack-images div,
     .set2-product-images div,
@@ -1080,6 +1085,7 @@ footer span{
     }
 
     .set3-product-images div,
+    .seating-images div,
     #more-bedtables div{
         width: 48%;
     }
@@ -1140,10 +1146,6 @@ footer span{
 
     .more-product-images div,
     .set2-product-images div{
-        width: 100%;
-    }
-
-    .seating-images{
         width: 100%;
     }
 }
@@ -1213,7 +1215,7 @@ footer span{
     }
 
     .seating-images div{
-        width: 80%;
+        width: 90%;
     }
 }
 
