@@ -900,6 +900,7 @@ footer span{
 /* bedside tables page */
 
 .see-more-button{
+    display: none;
     padding: 5px 10px;
     margin-bottom: 2rem;
     border: 3px solid #cfbaa6;
