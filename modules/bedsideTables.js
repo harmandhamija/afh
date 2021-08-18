@@ -1,6 +1,6 @@
 // bedsideTables.js
 
-import { moreProductImages, setThreeImages } from "./productImagesFunction.js";
+import displayProductImages, { moreProductImages } from "./productImagesFunction.js";
 import seeMoreImages from "./seeMoreImages.js";
 import totalResults from "./totalResults.js";
 
@@ -57,7 +57,7 @@ const imagesArray = [
 
 function bedsideTablesImages() {
 
-    setThreeImages(imagesArray);
+    displayProductImages(imagesArray);
 }
 
 bedsideTablesImages();

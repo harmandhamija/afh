@@ -63,6 +63,8 @@ export default function displayReviews() {
     })
 }
 
+displayReviews();
+
 // review slider
 
 export function reviewSlider() {
@@ -94,3 +96,5 @@ export function reviewSlider() {
     })
 
 }
+
+reviewSlider();

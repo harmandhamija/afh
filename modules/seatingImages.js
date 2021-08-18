@@ -1,6 +1,6 @@
 // seating.js
 
-import { setFourImages } from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function seatingImages() {
@@ -84,7 +84,7 @@ function seatingImages() {
             },
     ]
 
-    setFourImages(imagesArray);
+    displayProductImages(imagesArray);
     totalResults(imagesArray);
 }
 

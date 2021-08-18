@@ -1,6 +1,6 @@
 // sofaImages.js
 
-import { setTwoImages } from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function sofaImages() {
@@ -64,7 +64,7 @@ function sofaImages() {
             }
     ]
 
-    setTwoImages(imagesArray);
+    displayProductImages(imagesArray);
     totalResults(imagesArray);
 }
 

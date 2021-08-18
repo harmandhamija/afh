@@ -1,7 +1,7 @@
 // studyTable.js
 
 import seeMoreImages from "./seeMoreImages.js";
-import { setTwoImages, moreProductImages } from "./productImagesFunction.js";
+import displayProductImages, { moreProductImages } from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 const imagesArray = [
@@ -56,7 +56,7 @@ const imagesArray = [
 ]
 
 function studyImages() {
-    setTwoImages(imagesArray);
+    displayProductImages(imagesArray);
 }
 
 studyImages();

@@ -1,6 +1,6 @@
 // wardrobeImages.js
 
-import { setTwoImages } from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function wardrobeImages() {
@@ -64,7 +64,7 @@ function wardrobeImages() {
         }
     ]
 
-    setTwoImages(imagesArray);
+    displayProductImages(imagesArray);
     totalResults(imagesArray);
 }
 

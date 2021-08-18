@@ -1,6 +1,6 @@
 // beds.js
 
-import setOneImages from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function bedsImages() {
@@ -68,7 +68,7 @@ function bedsImages() {
         }
     ]
 
-    setOneImages(imagesArray);
+    displayProductImages(imagesArray);
     totalResults(imagesArray);
 }
 

@@ -19,24 +19,9 @@ function displayImages(imagesArray, imagesContainerDiv) {
     footer.style.display = 'block';
 }
 
-export default function setOneImages(imagesArray) {
-    const setOneProductImages = document.querySelector('.set1-product-images');
-    displayImages(imagesArray,setOneProductImages);
-}
-
-export function setTwoImages(imagesArray) {
-    const setTwoProductImages = document.querySelector('.set2-product-images');
-    displayImages(imagesArray, setTwoProductImages);
-}
-
-export function setThreeImages(imagesArray) {
-    const setThreeProductImages = document.querySelector('.set3-product-images');
-    displayImages(imagesArray, setThreeProductImages);
-}
-
-export function setFourImages(imagesArray) {
-    const setFourProductImages = document.querySelector('.set4-product-images');
-    displayImages(imagesArray, setFourProductImages);
+export default function displayProductImages(imagesArray) {
+    const displayProductImages = document.querySelector('.display-product-images');
+    displayImages(imagesArray, displayProductImages);
 }
 
 export function moreProductImages(imagesArray) {

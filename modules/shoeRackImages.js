@@ -1,6 +1,6 @@
 // shoeRakcs.js
 
-import { setFourImages } from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function shoeRackImages() {
@@ -60,7 +60,7 @@ function shoeRackImages() {
         }
     ]
 
-    setFourImages(imagesArray);
+    displayProductImages(imagesArray);
     totalResults(imagesArray);
 }
 

@@ -1,6 +1,6 @@
 // dressingImages.js
 
-import { setTwoImages } from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import seeMoreImages from "./seeMoreImages.js";
 import { moreProductImages } from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
@@ -75,7 +75,7 @@ const imagesPpArray = [
 
 function dressingPpImages() {
 
-    setTwoImages(imagesPpArray);
+    displayProductImages(imagesPpArray);
 }
 
 dressingPpImages();

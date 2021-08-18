@@ -1,6 +1,6 @@
 // coffeeTables.js
 
-import setOneImages from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function coffeeTableImages() {
@@ -52,7 +52,7 @@ function coffeeTableImages() {
             }
     ]
 
-    setOneImages(imagesArray);
+    displayProductImages(imagesArray);
     totalResults(imagesArray);
 }
 

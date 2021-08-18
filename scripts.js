@@ -1,5 +1,3 @@
-import displayReviews, { reviewSlider } from "./modules/reviews.js";
-
 const myApp = {};
 
 myApp.toggleMenu = function(){
@@ -49,8 +47,6 @@ myApp.handleScroll = function () {
 myApp.init = function(){
     myApp.toggleMenu();
     myApp.handleScroll();
-    displayReviews();
-    reviewSlider();
 }
 
 myApp.init();

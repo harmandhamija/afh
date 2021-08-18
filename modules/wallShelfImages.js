@@ -1,6 +1,6 @@
 // wallShelfImages.js
 
-import { setFourImages } from "./productImagesFunction.js";
+import displayProductImages from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function wallShelfImages() {
@@ -40,7 +40,7 @@ function wallShelfImages() {
         },
     ]
 
-    setFourImages(imagesArray);
+    displayProductImages(imagesArray);
     totalResults(imagesArray);
 }
 
