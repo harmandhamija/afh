@@ -794,7 +794,8 @@ footer span{
 
 .pages-heading p,
 .beds-heading p,
-.total-results{
+.total-results,
+.loading p{
     font-size: 1.3rem;
     width: 90%;
     margin: 2rem auto;

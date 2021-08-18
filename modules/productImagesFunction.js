@@ -11,7 +11,11 @@ function displayImages(imagesArray, imagesContainerDiv) {
         imageDiv.appendChild(productImage);
         imagesContainerDiv.appendChild(imageDiv);
     })
-    const footer = document.querySelector('.pages-footer')
+
+    const loading = document.querySelector('.loading');
+    loading.style.display = 'none';
+
+    const footer = document.querySelector('.pages-footer');
     footer.style.display = 'block';
 }
 
