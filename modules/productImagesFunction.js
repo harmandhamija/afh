@@ -30,6 +30,11 @@ export function setThreeImages(imagesArray) {
     displayImages(imagesArray, setThreeProductImages);
 }
 
+export function setFourImages(imagesArray) {
+    const setFourProductImages = document.querySelector('.set4-product-images');
+    displayImages(imagesArray, setFourProductImages);
+}
+
 export function moreProductImages(imagesArray) {
     const moreProductImages = document.querySelector('.more-product-images');
     displayImages(imagesArray, moreProductImages);

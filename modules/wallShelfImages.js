@@ -1,5 +1,6 @@
 // wallShelfImages.js
 
+import { setFourImages } from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function wallShelfImages() {
@@ -39,22 +40,7 @@ function wallShelfImages() {
         },
     ]
 
-    const wallShelfImages = document.querySelector('.wallshelf-images');
-
-    imagesArray.forEach((image) => {
-
-        const imageDiv = document.createElement('div');
-
-        const wallShelfImage = document.createElement('img');
-
-        wallShelfImage.src = `${image.path}`;
-        wallShelfImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(wallShelfImage);
-
-        wallShelfImages.appendChild(imageDiv);
-    })
-    
+    setFourImages(imagesArray);
     totalResults(imagesArray);
 }
 

@@ -1,5 +1,6 @@
 // shoeRakcs.js
 
+import { setFourImages } from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function shoeRackImages() {
@@ -59,22 +60,7 @@ function shoeRackImages() {
         }
     ]
 
-    const shoeRackImages = document.querySelector('.shoerack-images');
-
-    imagesArray.forEach((image) => {
-
-        const imageDiv = document.createElement('div');
-
-        const shoeRackImage = document.createElement('img');
-
-        shoeRackImage.src = `${image.path}`;
-        shoeRackImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(shoeRackImage);
-
-        shoeRackImages.appendChild(imageDiv);
-    })
-
+    setFourImages(imagesArray);
     totalResults(imagesArray);
 }
 

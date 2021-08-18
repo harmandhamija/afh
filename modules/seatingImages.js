@@ -1,5 +1,6 @@
 // seating.js
 
+import { setFourImages } from "./productImagesFunction.js";
 import totalResults from "./totalResults.js";
 
 function seatingImages() {
@@ -83,22 +84,7 @@ function seatingImages() {
             },
     ]
 
-    const seatingImages = document.querySelector('.seating-images');
-
-    imagesArray.forEach((image) => {
-
-        const imageDiv = document.createElement('div');
-
-        const seatingImage = document.createElement('img');
-
-        seatingImage.src = `${image.path}`;
-        seatingImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(seatingImage);
-
-        seatingImages.appendChild(imageDiv);
-    })
-
+    setFourImages(imagesArray);
     totalResults(imagesArray);
 }
 

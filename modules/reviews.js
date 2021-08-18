@@ -60,7 +60,6 @@ export default function displayReviews() {
         sliderContent.appendChild(customerCity);
 
         sliderContainer.appendChild(sliderContent);
-
     })
 }
 
