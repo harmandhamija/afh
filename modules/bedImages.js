@@ -70,9 +70,6 @@ function bedsImages() {
 
     setOneImages(imagesArray);
     totalResults(imagesArray);
-
-    const footer = document.querySelector('.pages-footer')
-    footer.style.display = 'block';
 }
 
 bedsImages();
