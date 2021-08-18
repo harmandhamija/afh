@@ -75,7 +75,7 @@ function shoeRackImages() {
         shoeRackImages.appendChild(imageDiv);
     })
 
-    totalResults(imagesArray, shoeRackImages)
+    totalResults(imagesArray);
 }
 
 shoeRackImages();

@@ -1,6 +1,7 @@
 // bookShelfs.js
 
 import { setThreeImages } from "./productImagesFunction.js";
+import totalResults from "./totalResults.js";
 
 function bookShelfImages() {
 
@@ -48,7 +49,7 @@ function bookShelfImages() {
     ]
 
     setThreeImages(imagesArray);
-
+    totalResults(imagesArray);
 }
 
 bookShelfImages();

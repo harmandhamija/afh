@@ -1,6 +1,7 @@
 // sofaImages.js
 
 import { setTwoImages } from "./productImagesFunction.js";
+import totalResults from "./totalResults.js";
 
 function sofaImages() {
 
@@ -64,23 +65,7 @@ function sofaImages() {
     ]
 
     setTwoImages(imagesArray);
-
-    // imagesArray.forEach((image) => {
-
-    //     const ssImages = document.querySelector('.ss-images');
-
-    //     const imageDiv = document.createElement('div');
-
-    //     const sofaImage = document.createElement('img');
-
-    //     sofaImage.src = `${image.path}`;
-    //     sofaImage.alt = `${image.alt}`;
-
-    //     imageDiv.appendChild(sofaImage);
-    //     ssImages.appendChild(imageDiv);
-
-    // })
-
+    totalResults(imagesArray);
 }
 
 sofaImages();

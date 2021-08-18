@@ -1,6 +1,7 @@
 // storage.js
 
 import { setThreeImages } from "./productImagesFunction.js";
+import totalResults from "./totalResults.js";
 
 function storageImages() {
 
@@ -56,6 +57,7 @@ function storageImages() {
     ]
 
     setThreeImages(imagesArray);
+    totalResults(imagesArray);
 }
 
 storageImages();

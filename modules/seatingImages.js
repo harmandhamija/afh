@@ -99,7 +99,7 @@ function seatingImages() {
         seatingImages.appendChild(imageDiv);
     })
 
-    totalResults(imagesArray,seatingImages);
+    totalResults(imagesArray);
 }
 
 seatingImages();

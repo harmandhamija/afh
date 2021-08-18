@@ -1,6 +1,7 @@
 // tvUnits.js
 
 import setOneImages from "./productImagesFunction.js";
+import totalResults from "./totalResults.js";
 
 function tvUnitImages() {
 
@@ -48,6 +49,7 @@ function tvUnitImages() {
     ]
 
     setOneImages(imagesArray);
+    totalResults(imagesArray);
 }
 
 tvUnitImages();

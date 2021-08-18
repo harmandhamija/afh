@@ -3,7 +3,7 @@
 import { setTwoImages } from "./productImagesFunction.js";
 import seeMoreImages from "./seeMoreImages.js";
 import { moreProductImages } from "./productImagesFunction.js";
-import { totalResults2 } from "./totalResults.js";
+import totalResults from "./totalResults.js";
 
 const imagesArray = [
     {
@@ -139,6 +139,5 @@ function moreDressingImages() {
 
 moreDressingImages();
 
-const totalImages = imagesArray.length + imagesPpArray.length + moreImagesArray.length;
-totalResults2(totalImages);
-
+const totalImagesArray = imagesArray.concat(moreImagesArray).concat(imagesPpArray);
+totalResults(totalImagesArray);

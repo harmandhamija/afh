@@ -54,8 +54,8 @@ function wallShelfImages() {
 
         wallShelfImages.appendChild(imageDiv);
     })
-    totalResults(imagesArray, wallShelfImages);
-
+    
+    totalResults(imagesArray);
 }
 
 wallShelfImages();

@@ -1,6 +1,7 @@
 // dining.js
 
 import setOneImages from "./productImagesFunction.js";
+import totalResults from "./totalResults.js";
 
 function diningImages() {
 
@@ -60,6 +61,7 @@ function diningImages() {
     ]
 
     setOneImages(imagesArray);
+    totalResults(imagesArray)
 }
 
 diningImages();

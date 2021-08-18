@@ -1,77 +1,34 @@
 // productImagesFunction.js
 
-export default function setOneImages(imagesArray) {
-
+function displayImages(imagesArray, imagesContainerDiv) {
     imagesArray.forEach((image) => {
-
-        const setOneProductImages = document.querySelector('.set1-product-images');
-
         const imageDiv = document.createElement('div');
+        const productImage = document.createElement('img');
 
-        const setOneProductImage = document.createElement('img');
+        productImage.src = `${image.path}`;
+        productImage.alt = `${image.alt}`;
 
-        setOneProductImage.src = `${image.path}`;
-        setOneProductImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(setOneProductImage);
-
-        setOneProductImages.appendChild(imageDiv);
+        imageDiv.appendChild(productImage);
+        imagesContainerDiv.appendChild(imageDiv);
     })
+}
+
+export default function setOneImages(imagesArray) {
+    const setOneProductImages = document.querySelector('.set1-product-images');
+    displayImages(imagesArray,setOneProductImages);
 }
 
 export function setTwoImages(imagesArray) {
-
-    imagesArray.forEach((image) => {
-
-        const setTwoProductImages = document.querySelector('.set2-product-images');
-
-        const imageDiv = document.createElement('div');
-
-        const setTwoProductImage = document.createElement('img');
-
-        setTwoProductImage.src = `${image.path}`;
-        setTwoProductImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(setTwoProductImage);
-
-        setTwoProductImages.appendChild(imageDiv);
-    })
-}
-
-export function moreProductImages(imagesArray) {
-
-    const moreProductImages = document.querySelector('.more-product-images');
-
-    imagesArray.forEach((image) => {
-
-        const imageDiv = document.createElement('div');
-
-        const moreProductImage = document.createElement('img');
-
-        moreProductImage.src = `${image.path}`;
-        moreProductImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(moreProductImage);
-
-        moreProductImages.appendChild(imageDiv);
-    })
+    const setTwoProductImages = document.querySelector('.set2-product-images');
+    displayImages(imagesArray, setTwoProductImages);
 }
 
 export function setThreeImages(imagesArray) {
+    const setThreeProductImages = document.querySelector('.set3-product-images');
+    displayImages(imagesArray, setThreeProductImages);
+}
 
-    imagesArray.forEach((image) => {
-
-        const setThreeProductImages = document.querySelector('.set3-product-images');
-
-        const imageDiv = document.createElement('div');
-
-        const setThreeProductImage = document.createElement('img');
-
-        setThreeProductImage.src = `${image.path}`;
-        setThreeProductImage.alt = `${image.alt}`;
-
-        imageDiv.appendChild(setThreeProductImage);
-
-        setThreeProductImages.appendChild(imageDiv);
-    })
+export function moreProductImages(imagesArray) {
+    const moreProductImages = document.querySelector('.more-product-images');
+    displayImages(imagesArray, moreProductImages);
 }

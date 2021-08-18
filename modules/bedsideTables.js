@@ -2,7 +2,7 @@
 
 import { moreProductImages, setThreeImages } from "./productImagesFunction.js";
 import seeMoreImages from "./seeMoreImages.js";
-import { totalResults2 } from "./totalResults.js";
+import totalResults from "./totalResults.js";
 
 const imagesArray = [
     {
@@ -141,7 +141,6 @@ function moreBedTableImages() {
 
 moreBedTableImages();
 
-let totalImages = imagesArray.length + moreImagesArray.length;
-totalResults2(totalImages);
-
+const totalImagesArray = imagesArray.concat(moreImagesArray);
+totalResults(totalImagesArray);
 
