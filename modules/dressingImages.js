@@ -41,7 +41,6 @@ function dressingImages() {
 
         dressingImages.appendChild(imageDiv);
     })
-
 }
 
 dressingImages();
@@ -74,7 +73,6 @@ const imagesPpArray = [
 ]
 
 function dressingPpImages() {
-
     displayProductImages(imagesPpArray);
 }
 
@@ -132,7 +130,6 @@ const moreImagesArray = [
 ]
 
 function moreDressingImages() {
-
     seeMoreImages(moreImagesArray);
     moreProductImages(moreImagesArray);
 }

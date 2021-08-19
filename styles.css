@@ -712,8 +712,6 @@ footer span{
 }
 
 .nav-product{
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
     margin-top: 2rem;
 }
 
@@ -721,11 +719,13 @@ footer span{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: rgba(207, 186, 166,0.2);
 }
 
 .nav-product ul li{
-    padding: 1.5rem 0;
-    opacity: 0.5;
+    padding: 0.8rem;
+    opacity: 0.6;
+    font-size: 1.4rem;
     transition: all 0.2s ease;
 }
 
@@ -761,8 +761,7 @@ footer span{
 .nav-product ul li:hover{
     opacity: 1;
     cursor: pointer;
-    padding-bottom: 2px;
-    border-bottom: 2px solid #cfbaa6;
+    background-color: rgba(207, 186, 166,0.3);
 }
 
 .pages-main{
@@ -887,11 +886,6 @@ footer span{
 
 
 /* seating page */
-
-/* .seating-images{
-    width: 80%;
-    margin: 0 auto;
-} */
 
 .seating-images div{
     width: 23%;
@@ -1084,6 +1078,15 @@ footer span{
 
     /* product pages */
 
+    .nav-product{
+        display: none;
+    }
+
+    .pages-main{
+        border-top: 1px solid #cfbaa6;
+        margin-top: 5rem;
+    }
+
     .pages-heading p,
     .beds-heading p{
         width: 100%;
@@ -1116,15 +1119,6 @@ footer span{
     .intro-about{
         width: 90%;
         padding-top: 30px;
-    }
-
-    .nav-product{
-        display: none;
-    }
-
-    .pages-main{
-        border-top: 1px solid #cfbaa6;
-        margin-top: 5rem;
     }
 
     .slider-text{
