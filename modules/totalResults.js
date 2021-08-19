@@ -5,6 +5,6 @@ export default function totalResults(imagesArray) {
     const totalResults = document.createElement('p');
 
     totalResults.setAttribute('class', 'total-results');
-    totalResults.textContent = `Total Results - ${imagesArray.length}`
+    totalResults.textContent = `Total Products - ${imagesArray.length}`
     totalProductImages.appendChild(totalResults);
 }

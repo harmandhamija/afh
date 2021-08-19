@@ -136,7 +136,7 @@ header h1{
 
 .menu-list.show{
     transform: translateX(0%);
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .menu-list-container{
@@ -719,12 +719,13 @@ footer span{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: rgba(207, 186, 166,0.2);
+    border: 1px solid #cfbaa6;
+    /* background-color: rgba(207, 186, 166,0.2); */
 }
 
 .nav-product ul li{
     padding: 0.8rem;
-    opacity: 0.6;
+    opacity: 0.7;
     font-size: 1.4rem;
     transition: all 0.2s ease;
 }

@@ -8,7 +8,8 @@ function seatingImages() {
     const imagesArray = [
         {
             path: './assets/gl-bali-chair.jpg',
-            alt: 'Seating Chaise'
+            alt: 'Seating Chair',
+            // code: 'AFH SC#1'
             },
         {
             path: './assets/gl-milan-chair.jpg',
